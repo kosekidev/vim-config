@@ -65,6 +65,7 @@ return {
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
+    dependencies = {{'nvim-lua/plenary.nvim'}},
     -- change some options
     opts = {
       defaults = {
@@ -73,6 +74,17 @@ return {
         sorting_strategy = "ascending",
         winblend = 0,
       },
+    },
+  },
+  -- add telescipe-fzf-native
+  {
+    "telescope.nvim",
+    dependencies = {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+      config = function()
+        require("telescope").load_extension("fzf")
+      end,
     },
   },
 
