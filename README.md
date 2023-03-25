@@ -34,38 +34,89 @@ Simple NVim config using LazyVim.
   - Easy comments
     - gc : Comment object or selection
     - gcc : Comment current line
-- mini.pairs
-- neo-tree.nvim
-- noice.nvim
-- nui.nvim
-- nvim-notify
-- nvim-treesitter
-- nvim-ts-autotag
-- nvim-web-devicons
-- targets.vim
-- toggleterm.nvim
-- undotree
-- gitsigns.nvim
-- vim-fugitive
-- vim-repeat
-- vim-surround
-- vscode.nvim
-- LuaSnip
-- cmp-buffer
-- cmp-nvim-lsp
-- cmp-path
-- dressing.nvim
-- friendly-snippets
-- mason.nvim
-- mason-lspconfig.nvim
-- neoconf.nvim
-- neodev.nvim
-- null-ls.nvim
-- nvim-cmp
-- nvim-lspconfig
-- nvim-spectre
-- nvim-ts-context-commentstring
-- telescope.nvim
+- [mini.pairs](https://github.com/echasnovski/mini.pairs)
+  - Autopair plugin (like "", '', (), {} etc...)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+  - Files browser
+    - Leader e (or E) : Toggle neotree
+- [noice.nvim](https://github.com/folke/noice.nvim)
+  - Message plugin
+    - Leader snl : Noice last message
+    - Leader snh : Noice history
+    - Leader sna : Noice all
+    - Ctrl + f : Scroll forward
+    - Ctrl + b : Scroll backward
+- [nui.nvim](https://github.com/MunifTanjim/nui.nvim)
+  - Ui component library
+- [nvim-notify](https://github.com/rcarriga/nvim-notify)
+  - Notification manager
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+  - Parser
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
+  - Use treesitter to autoclose and autorename htmltag
+- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+  - Give devicons power
+- [targets.vim](https://github.com/wellle/targets.vim)
+  - Add text objects
+- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+  - Very useful plugin about terminals
+    - Ctrl \ : Toggle terminal
+    - ToggleTerm X : Toggle terminal number X
+- [undotree](https://github.com/mbbill/undotree)
+  - Modification history with the possibility to undo what we need, very useful
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+  - Git decoration
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
+  - Git plugin
+    - :G : Open the git manager
+- [vim-repeat](https://github.com/tpope/vim-repeat)
+  - Add support to the . repeat command with other plugins like vim-surround
+- [vim-surround](https://github.com/tpope/vim-surround)
+  - Easy surrounding
+    - cs, ds, ys : For change surrounding, delete surrounding and add surrounding
+- [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
+  - Colorscheme that looks like VsCode
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+  - Lua snippets
+- [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+  - Snippets collection
+- [dressing.nvim](https://github.com/stevearc/dressing.nvim)
+  - Pimp ui
+- [neoconf.nvim](https://github.com/folke/neoconf.nvim)
+  - Project manager
+- [neodev.nvim](https://github.com/folke/neodev.nvim)
+  - Add signature help, docs and completion
+- [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
+  - Inject LSP diagnostics, code actions etc...
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+  - Completion plugin
+- [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
+  - Search panel
+    - Leader sr : Open spectre
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+  - Extandable fuzzy finder
+    - Leader space : Find files
+    - Leader / : Find in files
+    - Leader : (or sc) : Command history
+    - Leader fb : Files Buffers
+    - Leader fr : Recents
+    - Leader gc : Commits
+    - Leader gs : Status
+    - Leader sa : Auto Commands
+    - Leader sb : Search in current Buffer
+    - Leader sC : Commands
+    - Leader sd : diagnostics
+    - Leader sg : Grep
+    - Leader sh : Help pages
+    - Leader sH : Search Highlight groups
+    - Leader sk : Key Maps
+    - Leader sM : Man Pages
+    - Leader sm : Jump to Mark
+    - Leader so : Options
+    - Leader sR : Resume
+    - Leader sw : Find Word
+    - Leader uC : Colorscheme with preview
+    - Leader ss : Goto symbol
 - telescope-fzf-native.nvim
 - todo-comments.nvim
 - trouble.nvim
