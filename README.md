@@ -12,11 +12,13 @@ Simple NVim config using LazyVim.
     - Ctrl + k : Go to upper window
     - Ctrl + l : Go to right window
     - Ctrl + s : Save file
-    - Leader + qq : Quit all
-    - Leader + ft (or fT) : Terminal
+    - Leader qq : Quit all
+    - Leader ft (or fT) : Terminal
     - Esc + Esc : Enter Normal mode
-    - Leader + ww : Other window
-    - Leader + wd : Delete window
+    - Leader ww : Other window
+    - Leader wd : Delete window
+    - Leader - : Split window below
+    - Leader | : Split window right
 - [Harpoon](https://github.com/theprimeagen/harpoon)
   - Jump blazingly fast over files:
     - Ctrl + e : toggle the files list
@@ -26,8 +28,12 @@ Simple NVim config using LazyVim.
     - Leader + ll : Go to the fourth file
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
   - Status line
-- mini.comment
-  - 
+- [Mason](https://github.com/williamboman/mason.nvim)
+  - Package manager for LSP, DAP, linters and formatters.
+- [mini.comment](https://github.com/echasnovski/mini.comment)
+  - Easy comments
+    - gc : Comment object or selection
+    - gcc : Comment current line
 - mini.pairs
 - neo-tree.nvim
 - noice.nvim
