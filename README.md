@@ -6,6 +6,17 @@ Simple NVim config using LazyVim.
 
 - [LazyVim](https://github.com/LazyVim/LazyVim)
   - Base of this config
+    - Leader + l : Open lazy-vim manager
+    - Ctrl + h : Go to left window
+    - Ctrl + j : Go to lower window
+    - Ctrl + k : Go to upper window
+    - Ctrl + l : Go to right window
+    - Ctrl + s : Save file
+    - Leader + qq : Quit all
+    - Leader + ft (or fT) : Terminal
+    - Esc + Esc : Enter Normal mode
+    - Leader + ww : Other window
+    - Leader + wd : Delete window
 - [Harpoon](https://github.com/theprimeagen/harpoon)
   - Jump blazingly fast over files:
     - Ctrl + e : toggle the files list
@@ -13,8 +24,10 @@ Simple NVim config using LazyVim.
     - Leader + jj : Go to the second file
     - Leader + kk : Go to the third file
     - Leader + ll : Go to the fourth file
-- lualine
+- [lualine](https://github.com/nvim-lualine/lualine.nvim)
+  - Status line
 - mini.comment
+  - 
 - mini.pairs
 - neo-tree.nvim
 - noice.nvim
