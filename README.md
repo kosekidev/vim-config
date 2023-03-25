@@ -117,8 +117,18 @@ Simple NVim config using LazyVim.
     - Leader sw : Find Word
     - Leader uC : Colorscheme with preview
     - Leader ss : Goto symbol
-- telescope-fzf-native.nvim
-- todo-comments.nvim
-- trouble.nvim
-- vim-illuminate
-- vim-startuptime
+- [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+  - Highlight and search for todo comments like TODO, FIX etc...
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
+  - List diagnostics, references, telescope results, quickfix and location lists
+    - Leader xx : Document diagnostics
+    - Leader xX : Workspace diagnostics
+    - Leader xL : Location list
+    - leader xQ : Quickfix list
+    - [q : previous trouble/quickfix item
+    - ]q : next trouble/quickfix item
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
+  - Highlighting other uses of the word under the cursor
+- [vim-startuptime](https://github.com/dstein64/vim-startuptime)
+  - Give startup timing informations
+    - :StartupTime
