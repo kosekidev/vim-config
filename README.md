@@ -2,11 +2,31 @@
 
 Simple NVim config using LazyVim.
 
+You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
+
+## Personal keymaps
+
+- Leader u : Open Undotree
+- J (in visual mode) : move selection down
+- K (in visual mode) : move selection up
+- Y : Yank from cursor to end of line
+- Leader d : Delete the selection/object in the black hole register
+- Leader p : Delete the selection/object in the black hole register then paste
+- Leader y (or Y) : Yank in system clipboard
+
+### Harpoon personal shortcuts
+- Leader a : Add file to harpoon
+- Ctrl + e : toggle the files list
+- Leader hh : Go to the first file
+- Leader jj : Go to the second file
+- Leader kk : Go to the third file
+- Leader ll : Go to the fourth file
+
 ## Plugins
 
 - [LazyVim](https://github.com/LazyVim/LazyVim)
   - Base of this config
-    - Leader + l : Open lazy-vim manager
+    - Leader l : Open lazy-vim manager
     - Ctrl + h : Go to left window
     - Ctrl + j : Go to lower window
     - Ctrl + k : Go to upper window
@@ -21,11 +41,6 @@ Simple NVim config using LazyVim.
     - Leader | : Split window right
 - [Harpoon](https://github.com/theprimeagen/harpoon)
   - Jump blazingly fast over files:
-    - Ctrl + e : toggle the files list
-    - Leader + hh : Go to the first file
-    - Leader + jj : Go to the second file
-    - Leader + kk : Go to the third file
-    - Leader + ll : Go to the fourth file
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
   - Status line
 - [Mason](https://github.com/williamboman/mason.nvim)
