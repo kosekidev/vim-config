@@ -53,7 +53,7 @@ return {
   { "folke/which-key.nvim", enabled = false },
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
   { "echasnovski/mini.indentscope", enabled = false },
-  { " olke/neoconf.nvim", enabled = false },
+  { "folke/neoconf.nvim", enabled = false },
 
   -- change trouble config
   {
