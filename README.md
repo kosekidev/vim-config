@@ -142,7 +142,6 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 - [trouble.nvim](https://github.com/folke/trouble.nvim)
   - List diagnostics, references, telescope results, quickfix and location lists
     - Leader xx : Document diagnostics
-    - Leader xX : Workspace diagnostics
     - Leader xL : Location list
     - leader xQ : Quickfix list
     - [q : previous trouble/quickfix item
