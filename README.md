@@ -134,6 +134,11 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
     - Leader ss : Goto symbol
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
   - Highlight and search for todo comments like TODO, FIX etc...
+    - ]t : Next todo comment
+    - [t : Previous todo comment
+    - Leader xt : Todo (Trouble)
+    - Leader xT : Todo/Fix/Fixme (Trouble)
+    - Leader st : Todo
 - [trouble.nvim](https://github.com/folke/trouble.nvim)
   - List diagnostics, references, telescope results, quickfix and location lists
     - Leader xx : Document diagnostics
