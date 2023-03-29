@@ -14,7 +14,32 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 - Leader p : Delete the selection/object in the black hole register then paste
 - Leader y (or Y) : Yank in system clipboard
 
+## LSP keymaps
+
+- Leader cd : Line diagnostics
+- Leader cl : LSP Info
+- Leader cf : Format Document
+- Leader cf (visual mode) : Format Range
+- Leader ca : Code Action
+- Leader cA : Source Action
+- Leader cr : Rename
+- Ctrl + k : Signature Help
+- gd : Goto definition
+- gr : References
+- gD : Goto Declaration
+- gI : Goto Implementation
+- gt : Goto Type Definition
+- K : Hover
+- gK : Signature Help
+- ]d : Next Diagnostic
+- [d : Previous Diagnostic
+- ]e : Next Error
+- [e : Previous Error
+- ]w : Next Warning
+- [w : Previous Warning
+
 ### Harpoon personal shortcuts
+
 - Leader a : Add file to harpoon
 - Ctrl + e : toggle the files list
 - Leader hh : Go to the first file
