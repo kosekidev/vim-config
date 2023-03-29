@@ -38,10 +38,15 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 - ]w : Next Warning
 - [w : Previous Warning
 
+## Navigation keymaps
+
+- Leader ss : Jump to a function in the current buffer
+- Ctrl + o and Ctrl + i : Navigate to another opened buffer
+
 ### Harpoon personal shortcuts
 
-- Leader a : Add file to harpoon
 - Ctrl + e : toggle the files list
+- Leader a : Add file to harpoon
 - Leader hh : Go to the first file
 - Leader jj : Go to the second file
 - Leader kk : Go to the third file
