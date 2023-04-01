@@ -39,3 +39,6 @@ end)
 vim.keymap.set("n", "<CS-L>", function()
   ui.nav_file(4)
 end)
+
+-- BuildScript plugin keymaps
+vim.keymap.set("n", "<leader>bs", ":OpenBuildScripts<CR>")

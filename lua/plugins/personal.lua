@@ -1,4 +1,5 @@
 return {
+  { "KosekiDev/build_script" },
   { "theprimeagen/harpoon" },
   {
     "mbbill/undotree",
