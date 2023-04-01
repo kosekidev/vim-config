@@ -100,6 +100,12 @@ return {
   -- add jsonls and schemastore ans setup treesitter for json, json5 and jsonc
   -- { import = "lazyvim.plugins.extras.lang.json" },
 
+  {
+    "RRethy/vim-illuminate",
+    opts = {
+      large_file_cutoff = 2000,
+    }
+  },
 
   -- add more treesitter parsers
   {
