@@ -13,6 +13,7 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 - Leader d : Delete the selection/object in the black hole register
 - Leader p : Delete the selection/object in the black hole register then paste
 - Leader y (or Y) : Yank in system clipboard
+- Leader bs : Open BuildScript quicklist to execute any project's build script
 
 ## LSP keymaps
 
@@ -71,6 +72,8 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
     - Leader | : Split window right
 - [Harpoon](https://github.com/theprimeagen/harpoon)
   - Jump blazingly fast over files:
+- [build_script](https://github.com/KosekiDev/build_script)
+  - A plugin to provide a quicklist to execute build script
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
   - Status line
 - [Mason](https://github.com/williamboman/mason.nvim)
