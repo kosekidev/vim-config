@@ -47,10 +47,10 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 
 - Ctrl + e : toggle the files list
 - Leader a : Add file to harpoon
-- Leader hh : Go to the first file
-- Leader jj : Go to the second file
-- Leader kk : Go to the third file
-- Leader ll : Go to the fourth file
+- Ctrl + Shift + H : Go to the first file
+- Ctrl + Shift + J : Go to the second file
+- Ctrl + Shift + K : Go to the third file
+- Ctrl + Shift + L : Go to the fourth file
 
 ## Plugins
 
