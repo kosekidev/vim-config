@@ -180,8 +180,6 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
     - leader xQ : Quickfix list
     - [q : previous trouble/quickfix item
     - ]q : next trouble/quickfix item
-- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
-  - Highlighting other uses of the word under the cursor
 - [vim-startuptime](https://github.com/dstein64/vim-startuptime)
   - Give startup timing informations
     - :StartupTime
