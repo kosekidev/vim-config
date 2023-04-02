@@ -98,6 +98,7 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
   - Ui component library
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
   - Notification manager
+    - Leader un : Delete all notifications
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
   - Parser
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
