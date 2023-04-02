@@ -42,3 +42,7 @@ end)
 
 -- BuildScript plugin keymaps
 vim.keymap.set("n", "<leader>bs", ":OpenBuildScripts<CR>")
+
+-- Removing LazyVim annoying keymaps
+vim.cmd("unmap <A-j>")
+vim.cmd("unmap <A-k>")
