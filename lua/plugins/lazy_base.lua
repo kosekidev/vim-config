@@ -31,6 +31,9 @@ return {
     opts = {
       cmdline= {
         view = "cmdline"
+      },
+      messages = {
+        enabled = false
       }
     }
   },
