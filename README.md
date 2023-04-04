@@ -145,6 +145,7 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
   - Extandable fuzzy finder
     - Leader space : Find files
+    - Leader ff : Find git files
     - Leader / : Find in files
     - Leader : (or sc) : Command history
     - Leader fb : Files Buffers

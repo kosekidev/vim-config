@@ -81,6 +81,13 @@ return {
         winblend = 0,
       },
     },
+    keys = {
+      {
+        "<leader><space>",
+        ":Telescope find_files<CR>",
+        desc = "Open telescope find files",
+      },
+    }
   },
   -- add telescipe-fzf-native
   {
