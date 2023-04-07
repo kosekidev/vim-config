@@ -46,7 +46,7 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 
 ### Harpoon personal shortcuts
 
-- Ctrl + e : toggle the files list
+- Ctrl + q : toggle the files list
 - Leader a : Add file to harpoon
 - Ctrl + Shift + H : Go to the first file
 - Ctrl + Shift + J : Go to the second file
