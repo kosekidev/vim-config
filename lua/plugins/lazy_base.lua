@@ -123,7 +123,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "help",
+        "vimdoc",
         "html",
         "javascript",
         "json",
