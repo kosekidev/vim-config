@@ -12,7 +12,6 @@
 return {
   {
     "Mofiqul/vscode.nvim", config = function()
-      require('vscode').setup({})
       vim.api.nvim_set_hl(0, '@constant', { fg = "#4fc1ff", bg = 'NONE' })
       vim.api.nvim_set_hl(0, '@type.builtin', { fg = "#4EC9B0", bg = 'NONE' })
     end
@@ -32,9 +31,10 @@ return {
       cmdline= {
         view = "cmdline"
       },
-      messages = {
-        enabled = false
-      }
+      -- Uncomment this 3 next lines if you want remove noice messages
+      -- messages = {
+      --   enabled = false
+      -- }
     }
   },
 
