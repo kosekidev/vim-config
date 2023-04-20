@@ -48,7 +48,6 @@ return {
   { "folke/persistence.nvim", enabled = false },
   { "SmiteshP/nvim-navic", enabled = false },
   { "ggandor/leap.nvim", enabled = false },
-  { "catppuccin/nvim", enabled = false },
   { "folke/tokyonight.nvim", enabled = false },
   { "echasnovski/mini.surround", enabled = false },
   { "echasnovski/mini.bufremove", enabled = false },
@@ -57,6 +56,14 @@ return {
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
   { "echasnovski/mini.indentscope", enabled = false },
   { "folke/neoconf.nvim", enabled = false },
+  { "b0o/SchemaStore.nvim", enabled = false },
+  {
+    "RRethy/vim-illuminate",
+    opts = {
+      large_file_cutoff = 2000,
+    },
+    enabled = false
+  },
 
   -- change trouble config
   {
@@ -102,7 +109,6 @@ return {
   },
 
   { "neovim/nvim-lspconfig", },
-  { "b0o/SchemaStore.nvim", enabled = false },
 
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
   -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
@@ -110,13 +116,6 @@ return {
   -- add jsonls and schemastore ans setup treesitter for json, json5 and jsonc
   -- { import = "lazyvim.plugins.extras.lang.json" },
 
-  {
-    "RRethy/vim-illuminate",
-    opts = {
-      large_file_cutoff = 2000,
-    },
-    enabled = false
-  },
 
   -- add more treesitter parsers
   {
