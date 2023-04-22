@@ -1,7 +1,3 @@
--- since this is just an example spec, don't actually load anything here and return an empty spec
--- stylua: ignore
--- if true then return {} end
-
 -- every spec file under config.plugins will be loaded automatically by lazy.nvim
 --
 -- In your plugin files, you can:
@@ -11,12 +7,13 @@
 
 return {
   {
-    "Mofiqul/vscode.nvim", config = function()
-      vim.api.nvim_set_hl(0, '@constant', { fg = "#4fc1ff", bg = 'NONE' })
-      vim.api.nvim_set_hl(0, '@type.builtin', { fg = "#4EC9B0", bg = 'NONE' })
-    end
+    "Mofiqul/vscode.nvim",
+    config = function()
+      vim.api.nvim_set_hl(0, "@constant", { fg = "#4fc1ff", bg = "NONE" })
+      vim.api.nvim_set_hl(0, "@type.builtin", { fg = "#4EC9B0", bg = "NONE" })
+    end,
   },
-  -- Configure LazyVim to load vscode
+  -- Configure LazyVim to load vscode colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
@@ -26,16 +23,16 @@ return {
 
   -- To remove command-line overlay
   {
-  "folke/noice.nvim",
+    "folke/noice.nvim",
     opts = {
-      cmdline= {
-        view = "cmdline"
+      cmdline = {
+        view = "cmdline",
       },
       -- Uncomment this 3 next lines if you want remove noice messages
       -- messages = {
       --   enabled = false
       -- }
-    }
+    },
   },
 
   -- Git manager
@@ -62,7 +59,7 @@ return {
     opts = {
       large_file_cutoff = 2000,
     },
-    enabled = false
+    enabled = false,
   },
 
   -- change trouble config
@@ -78,7 +75,7 @@ return {
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = {{'nvim-lua/plenary.nvim'}},
+    dependencies = { { "nvim-lua/plenary.nvim" } },
     -- change some options
     opts = {
       defaults = {
@@ -94,7 +91,7 @@ return {
         ":Telescope find_files<CR>",
         desc = "Open telescope find files",
       },
-    }
+    },
   },
   -- add telescipe-fzf-native
   {
@@ -108,14 +105,13 @@ return {
     },
   },
 
-  { "neovim/nvim-lspconfig", },
+  { "neovim/nvim-lspconfig" },
 
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
   -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
   -- { import = "lazyvim.plugins.extras.lang.typescript" },
   -- add jsonls and schemastore ans setup treesitter for json, json5 and jsonc
   -- { import = "lazyvim.plugins.extras.lang.json" },
-
 
   -- add more treesitter parsers
   {
@@ -135,8 +131,8 @@ return {
         "typescript",
       },
       autotag = {
-        enable = true
-      }
+        enable = true,
+      },
     },
   },
 
@@ -174,7 +170,12 @@ return {
       local has_words_before = function()
         unpack = unpack or table.unpack
         local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-        return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+        return col ~= 0
+          and vim.api
+              .nvim_buf_get_lines(0, line - 1, line, true)[1]
+              :sub(col, col)
+              :match("%s")
+            == nil
       end
 
       local luasnip = require("luasnip")
@@ -205,5 +206,5 @@ return {
         end, { "i", "s" }),
       })
     end,
-  }
+  },
 }
