@@ -69,9 +69,6 @@ return {
     opts = { use_diagnostic_signs = true },
   },
 
-  -- override nvim-cmp
-  { "hrsh7th/nvim-cmp" },
-
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
