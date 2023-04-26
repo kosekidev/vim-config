@@ -1,10 +1,3 @@
--- every spec file under config.plugins will be loaded automatically by lazy.nvim
---
--- In your plugin files, you can:
--- * add extra plugins
--- * disable/enabled LazyVim plugins
--- * override the configuration of LazyVim plugins
-
 return {
   {
     "Mofiqul/vscode.nvim",
@@ -21,6 +14,9 @@ return {
     },
   },
 
+  -- Git manager
+  { "tpope/vim-fugitive" },
+
   -- To remove command-line overlay
   {
     "folke/noice.nvim",
@@ -35,45 +31,13 @@ return {
     },
   },
 
-  -- Git manager
-  { "tpope/vim-fugitive" },
-
-  -- Disable some useless plugins
-  { "goolord/alpha-nvim", enabled = false },
-  { "akinsho/bufferline.nvim", enabled = false },
-  { "echasnovski/mini.ai", enabled = false },
-  { "folke/persistence.nvim", enabled = false },
-  { "SmiteshP/nvim-navic", enabled = false },
-  { "ggandor/leap.nvim", enabled = false },
-  { "folke/tokyonight.nvim", enabled = false },
-  { "echasnovski/mini.surround", enabled = false },
-  { "echasnovski/mini.bufremove", enabled = false },
-  { "ggandor/flit.nvim", enabled = false },
-  { "folke/which-key.nvim", enabled = false },
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
-  { "echasnovski/mini.indentscope", enabled = false },
-  { "folke/neoconf.nvim", enabled = false },
-  { "b0o/SchemaStore.nvim", enabled = false },
-  {
-    "RRethy/vim-illuminate",
-    opts = {
-      large_file_cutoff = 2000,
-    },
-    enabled = false,
-  },
-
-  -- change trouble config
   {
     "folke/trouble.nvim",
-    -- opts will be merged with the parent spec
     opts = { use_diagnostic_signs = true },
   },
-
-  -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
     dependencies = { { "nvim-lua/plenary.nvim" } },
-    -- change some options
     opts = {
       defaults = {
         layout_strategy = "horizontal",
@@ -103,12 +67,6 @@ return {
   },
 
   { "neovim/nvim-lspconfig" },
-
-  -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
-  -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
-  -- { import = "lazyvim.plugins.extras.lang.typescript" },
-  -- add jsonls and schemastore ans setup treesitter for json, json5 and jsonc
-  -- { import = "lazyvim.plugins.extras.lang.json" },
 
   -- add more treesitter parsers
   {
@@ -142,7 +100,6 @@ return {
       }
     end,
   },
-  -- add any tools you want to have installed below
   {
     "williamboman/mason.nvim",
     opts = {
@@ -203,5 +160,28 @@ return {
         end, { "i", "s" }),
       })
     end,
+  },
+  -- Disable some useless plugins
+  { "goolord/alpha-nvim", enabled = false },
+  { "akinsho/bufferline.nvim", enabled = false },
+  { "echasnovski/mini.ai", enabled = false },
+  { "folke/persistence.nvim", enabled = false },
+  { "SmiteshP/nvim-navic", enabled = false },
+  { "ggandor/leap.nvim", enabled = false },
+  { "folke/tokyonight.nvim", enabled = false },
+  { "echasnovski/mini.surround", enabled = false },
+  { "echasnovski/mini.bufremove", enabled = false },
+  { "ggandor/flit.nvim", enabled = false },
+  { "folke/which-key.nvim", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
+  { "echasnovski/mini.indentscope", enabled = false },
+  { "folke/neoconf.nvim", enabled = false },
+  { "b0o/SchemaStore.nvim", enabled = false },
+  {
+    "RRethy/vim-illuminate",
+    opts = {
+      large_file_cutoff = 2000,
+    },
+    enabled = false,
   },
 }
