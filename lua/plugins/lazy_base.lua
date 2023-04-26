@@ -28,10 +28,10 @@ return {
       cmdline = {
         view = "cmdline",
       },
-      -- Uncomment this 3 next lines if you want remove noice messages
-      -- messages = {
-      --   enabled = false
-      -- }
+      -- Comment this 3 next lines if you don't want noice messages
+      messages = {
+        enabled = false,
+      },
     },
   },
 
