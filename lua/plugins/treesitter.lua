@@ -27,22 +27,6 @@ return {
 				"vimdoc",
 			},
 			textobjects = {
-				-- select = {
-				--     enable = true,
-				--     lookahead = true,
-				--     keymaps = {
-				--         ["aa"] = "@parameter.outer",
-				--         ["ia"] = "@parameter.inner",
-				--         ["af"] = "@function.outer",
-				--         ["if"] = "@function.inner",
-				--     },
-				--     selection_modes = {
-				--         ['@parameter.outer'] = 'v',
-				--         ['@function.outer'] = 'V',
-				--         ['@function.inner'] = 'V',
-				--     },
-				--     include_surrounding_whitespace = false
-				-- },
 				move = {
 					enable = true,
 					set_jumps = true, -- whether to set jumps in the jumplist
