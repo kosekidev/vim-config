@@ -4,7 +4,7 @@ return {
 		build = ":TSUpdate",
 		event = { "BufReadPost", "BufNewFile" },
 		opts = {
-			autota = {
+			autotag = {
 				enable = true,
 			},
 			highlight = {

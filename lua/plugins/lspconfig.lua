@@ -17,7 +17,13 @@ return {
 		-- Autocompletion
 		{ "hrsh7th/nvim-cmp" }, -- Required
 		{ "hrsh7th/cmp-nvim-lsp" }, -- Required
-		{ "L3MON4D3/LuaSnip" }, -- Required
+		{
+			"L3MON4D3/LuaSnip",
+			dependencies = { "rafamadriz/friendly-snippets" },
+			config = function()
+				require("luasnip.loaders.from_vscode").lazy_load()
+			end,
+		}, -- Required
 		-- Others
 		{ "hrsh7th/cmp-path" }, -- Required
 		{ "hrsh7th/cmp-buffer" }, -- Required
