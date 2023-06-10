@@ -3,6 +3,7 @@
 Simple NVim config using lazy.vim as package manager.
 
 You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
+
 After installation, do :checkhealth to check if you have all required dependencies.
 
 ## Util. keymaps
