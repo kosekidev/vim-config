@@ -21,6 +21,8 @@ return {
 				"json",
 				"lua",
 				"luadoc",
+				"markdown",
+				"markdown_inline",
 				"query",
 				"regex",
 				"vim",
