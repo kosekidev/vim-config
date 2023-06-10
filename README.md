@@ -97,7 +97,8 @@ Use treesitter to autoclose and autorename html tag.
 
 ## [noice.nvim](https://github.com/folke/noice.nvim)
 
-  - Message plugin
+Message plugin
+
 | Mode | Keymap | Description |
 | ---- | ------ | ----------- |
 | n | `<leader>snl` | Noice last message |
