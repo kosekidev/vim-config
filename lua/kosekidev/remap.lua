@@ -2,6 +2,11 @@ vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { silent = true })
 vim.keymap.set("n", "<leader>gs", ":LazyGit<CR>", { silent = true })
 
+vim.keymap.set("n", "<C-H>", "<C-W>h", { silent = true })
+vim.keymap.set("n", "<C-L>", "<C-W>l", { silent = true })
+vim.keymap.set("n", "<C-J>", "<C-W>j", { silent = true })
+vim.keymap.set("n", "<C-K>", "<C-W>k", { silent = true })
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
