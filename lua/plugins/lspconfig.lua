@@ -100,6 +100,7 @@ return {
 
 		lsp.setup()
 
+		local luasnip = require("luasnip")
 		local cmp = require("cmp")
 		local cmp_action = require("lsp-zero").cmp_action()
 
@@ -115,6 +116,13 @@ return {
 			mapping = {
 				["<C-f>"] = cmp_action.luasnip_jump_forward(),
 				["<C-b>"] = cmp_action.luasnip_jump_backward(),
+				["<Tab>"] = cmp.mapping(function(fallback)
+					if luasnip.expand_or_jumpable() then
+						luasnip.expand_or_jump()
+					else
+						fallback()
+					end
+				end, { "i" }),
 			},
 		})
 	end,
