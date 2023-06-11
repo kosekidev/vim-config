@@ -29,7 +29,9 @@ After installation, do :checkhealth to check if you have all required dependenci
 | ---- | ------ | ----------- |
 | n | `<leader>l` | Open lazy-vim manager |
 
-## [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim/tree/v2.x)
+## [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim/)
+
+The purpose of this plugin is to bundle all the "boilerplate code" necessary to have nvim-cmp (a popular autocompletion plugin) and nvim-lspconfig working together. And if you opt in, it can use mason.nvim to let you install language servers from inside neovim.
 
 | Mode | Keymap | Description |
 | ---- | ------ | ----------- |
@@ -67,6 +69,38 @@ Plugin for calling lazygit from within neovim.
 | Mode | Keymap | Description |
 | ---- | ------ | ----------- |
 | n | `<leader>gs` | Open Mason manager |
+
+## [Neotest](https://github.com/nvim-neotest/neotest/)
+
+| Mode | Keymap | Description |
+| ---- | ------ | ----------- |
+| n | `<leader>tv` | Open summary panel |
+| n | `<leader>tnr` | Run the nearest test |
+| n | `<leader>tfr` | Run the current file |
+| n | `<leader>ts` | Stop the nearest test |
+| n | `<leader>ta` | Attach the nearest test |
+
+In the summary panel, you have this commands :
+
+| Mode | Key | Description |
+| ---- | ------ | ----------- |
+| n | `a` | Attach |
+| n | `M` | Clear mark |
+| n | `T` | Clear target |
+| n | `d` | Debug |
+| n | `D` | Debug marked |
+| n | `<CR>` | Expand |
+| n | `e` | Expand all |
+| n | `i` | Jump into |
+| n | `m` | Mark |
+| n | `J` | Next failed |
+| n | `o` | Output |
+| n | `K` | Previous failed |
+| n | `r` | Run |
+| n | `R` | Run marked |
+| n | `O` | Short |
+| n | `u` | Stop |
+| n | `t` | Target |
 
 ## [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 
