@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.opt.foldcolumn = "auto"
+
 vim.o.relativenumber = true
 vim.o.number = true
 
