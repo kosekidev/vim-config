@@ -285,3 +285,9 @@ A pretty list for showing diagnostics, references, telescope results, quickfix a
 | n    | `<leader>xQ` | Quickfix list                  |
 | n    | `[q`         | previous trouble/quickfix item |
 | n    | `]q`         | next trouble/quickfix item     |
+
+## [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+
+Nerd fonts moved some symbols with version 3.0. Version 2.3 is meant for transition, supporting both version 2 and version 3 icons.
+
+Nvim-web-devicons requires version 2.3 or above to work properly. If you are unable to update please use your plugin manager to pin version of nvim-web-dev icons to nerd-v2-compat tag.
