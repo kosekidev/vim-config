@@ -134,7 +134,9 @@ Has builtins for brackets, quotes, function call, argument, tag, user prompt, an
 Example :
 
 vaf : Select around a function
+
 vic : Select inside a class
+
 daa : Delete a parameter
 
 ## [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
