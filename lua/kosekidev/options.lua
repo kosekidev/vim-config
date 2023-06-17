@@ -28,5 +28,5 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
 vim.opt.clipboard = ""
-vim.opt.wrap = true
+vim.opt.wrap = false
 vim.opt.showmode = false
