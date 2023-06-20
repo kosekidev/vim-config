@@ -15,7 +15,7 @@ return {
     { "williamboman/mason-lspconfig.nvim" }, -- Optional
 
     -- Autocompletion
-    { "hrsh7th/nvim-cmp" },   -- Required
+    { "hrsh7th/nvim-cmp" },     -- Required
     { "hrsh7th/cmp-nvim-lsp" }, -- Required
     {
       "L3MON4D3/LuaSnip",
@@ -23,11 +23,11 @@ return {
       config = function()
         require("luasnip.loaders.from_vscode").lazy_load()
       end,
-    },                                -- Required
+    },                                  -- Required
     -- Others
-    { "hrsh7th/cmp-path" },           -- Required
-    { "hrsh7th/cmp-buffer" },         -- Required
-    { "saadparwaiz1/cmp_luasnip" },   -- Required
+    { "hrsh7th/cmp-path" },             -- Required
+    { "hrsh7th/cmp-buffer" },           -- Required
+    { "saadparwaiz1/cmp_luasnip" },     -- Required
     { "rafamadriz/friendly-snippets" }, -- Required
   },
   init = function()
@@ -96,7 +96,13 @@ return {
     end)
 
     -- (Optional) Configure lua language server for neovim
-    require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
+    local lspconfig = require("lspconfig")
+    lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
+    lspconfig.tsserver.setup({
+      on_attach = function(client, bufnr)
+        client.server_capabilities.documentFormattingProvider = false
+      end,
+    })
 
     lsp.setup()
 
