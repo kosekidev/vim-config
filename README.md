@@ -23,7 +23,7 @@ After installation, do :checkhealth to check if you have all required dependenci
 | n    | `<C-J>`     | Move cursor to the bottom window                                  |
 | n    | `<C-K>`     | Move cursor to the top window                                     |
 
-## [LazyVim](https://github.com/LazyVim/LazyVim)
+## [lazy.vim](https://github.com/folke/lazy.nvim)
 
 | Mode | Keymap      | Description           |
 | ---- | ----------- | --------------------- |
