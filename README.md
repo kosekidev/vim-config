@@ -206,10 +206,6 @@ If you've ever tried using the . command after a plugin map, you were likely dis
 
 Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more. The plugin provides mappings to easily delete, change and add such surroundings in pairs.
 
-## [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
-
-Colorscheme that looks like VsCode
-
 ## [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 
 Lua snippets plugin
@@ -221,6 +217,10 @@ Snippets collection for a set of different programming languages.
 ## [dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
 Pimp ui
+
+## [Catppuccin](https://github.com/catppuccin/nvim)
+
+This port of Catppuccin is special because it was the first one and the one that originated the project itself. Given this, it's important to acknowledge that it all didn't come to be what it is now out of nowhere. So, if you are interested in knowing more about the initial stages of the theme, you can find it under the v0.1 tag
 
 ## [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
 
