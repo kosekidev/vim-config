@@ -30,3 +30,6 @@ vim.opt.signcolumn = "yes"
 vim.opt.clipboard = ""
 vim.opt.wrap = false
 vim.opt.showmode = false
+
+vim.g.netrw_liststyle = 3
+vim.g.netrw_banner = 0
