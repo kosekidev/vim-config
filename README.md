@@ -264,27 +264,12 @@ Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the late
 
 Todo-comments is a lua plugin for Neovim 0.5 to highlight and search for todo comments like TODO, HACK, BUG in your code base.
 
-| Mode | Keymap       | Description              |
-| ---- | ------------ | ------------------------ |
-| n    | `]t`         | Next todo comment        |
-| n    | `[t`         | Previous todo comment    |
-| n    | `<leader>xt` | Todo (Trouble)           |
-| n    | `<leader>xT` | Todo/Fix/Fixme (Trouble) |
-| n    | `<leader>st` | Todo                     |
-| n    | `<leader>sT` | Todo/Fix/Fixme           |
-
-## [trouble.nvim](https://github.com/folke/trouble.nvim)
-
-A pretty list for showing diagnostics, references, telescope results, quickfix and location lists to help you solve all the trouble your code is causing.
-
-| Mode | Keymap       | Description                    |
-| ---- | ------------ | ------------------------------ |
-| n    | `<leader>xx` | Document diagnostics           |
-| n    | `<leader>xX` | Workspace diagnostics          |
-| n    | `<leader>xL` | Location list                  |
-| n    | `<leader>xQ` | Quickfix list                  |
-| n    | `[q`         | previous trouble/quickfix item |
-| n    | `]q`         | next trouble/quickfix item     |
+| Mode | Keymap       | Description           |
+| ---- | ------------ | --------------------- |
+| n    | `]t`         | Next todo comment     |
+| n    | `[t`         | Previous todo comment |
+| n    | `<leader>st` | Todo                  |
+| n    | `<leader>sT` | Todo/Fix/Fixme        |
 
 ## [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 
