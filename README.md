@@ -106,6 +106,72 @@ In the summary panel, you have this commands :
 
 A blazing fast and easy to configure Neovim statusline written in Lua.
 
+## [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+
+A file explorer for Neovim
+
+| Mode | Key         | Description    |
+| ---- | ----------- | -------------- |
+| n    | `<leader>e` | Toggle Neotree |
+
+In neo-tree :
+
+| Key              | Description            |
+| ---------------- | ---------------------- |
+| `<C-]>`          | CD                     |
+| `<C-e>`          | Open: In Place         |
+| `<C-k>`          | Info                   |
+| `<C-r>`          | Rename: Omit Filename  |
+| `<C-t>`          | Open: New Tab          |
+| `<C-v>`          | Open: Vertical Split   |
+| `<C-x>`          | Open: Horizontal Split |
+| `<BS>`           | Close Directory        |
+| `<CR>`           | Open                   |
+| `<Tab>`          | Open Preview           |
+| `>`              | Next Sibling           |
+| `<`              | Previous Sibling       |
+| `.`              | Run Command            |
+| `-`              | Up                     |
+| `a`              | Create                 |
+| `bd`             | Delete Bookmarked      |
+| `bmv`            | Move Bookmarked        |
+| `B`              | Toggle No Buffer       |
+| `c`              | Copy                   |
+| `C`              | Toggle Git Clean       |
+| `[c`             | Prev Git               |
+| `]c`             | Next Git               |
+| `d`              | Delete                 |
+| `D`              | Trash                  |
+| `E`              | Expand All             |
+| `e`              | Rename: Basename       |
+| `]e`             | Next Diagnostic        |
+| `[e`             | Prev Diagnostic        |
+| `F`              | Clean Filter           |
+| `f`              | Filter                 |
+| `g?`             | Help                   |
+| `gy`             | Copy Absolute Path     |
+| `H`              | Toggle Dotfiles        |
+| `I`              | Toggle Git Ignore      |
+| `J`              | Last Sibling           |
+| `K`              | First Sibling          |
+| `m`              | Toggle Bookmark        |
+| `o`              | Open                   |
+| `O`              | Open: No Window Picker |
+| `p`              | Paste                  |
+| `P`              | Parent Directory       |
+| `q`              | Close                  |
+| `r`              | Rename                 |
+| `R`              | Refresh                |
+| `s`              | Run System             |
+| `S`              | Search                 |
+| `U`              | Toggle Hidden          |
+| `W`              | Collapse               |
+| `x`              | Cut                    |
+| `y`              | Copy Name              |
+| `Y`              | Copy Relative Path     |
+| `<2-LeftMouse>`  | Open                   |
+| `<2-RightMouse>` | CD                     |
+
 ## [mini.comment](https://github.com/echasnovski/mini.comment)
 
 Easy comments

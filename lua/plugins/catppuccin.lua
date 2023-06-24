@@ -4,6 +4,7 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup({
+      no_italic = true,
       integrations = {
         cmp = true,
         telescope = true,
@@ -15,6 +16,7 @@ return {
         native_lsp = {
           enabled = true
         },
+        nvimtree = true,
         treesitter = true,
       }
     })
