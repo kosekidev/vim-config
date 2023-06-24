@@ -14,24 +14,24 @@ vim.smartindent = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 vim.opt.updatetime = 150
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.wildignore:append { "*/node_modules/*" }
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
+vim.opt.wrap = false
+vim.opt.fillchars = { eob = ' ' }
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
 vim.opt.clipboard = ""
-vim.opt.wrap = false
 vim.opt.showmode = false
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
-vim.opt.fillchars = { eob = ' ' }
