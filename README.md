@@ -113,36 +113,36 @@ telescope-file-browser.nvim is a file browser extension for telescope.nvim. It s
 | ---- | ----------- | ----------------- |
 | n    | `<leader>e` | Open file browser |
 
-| Mode | Key      | Description                    |
-| ---- | -------- | ------------------------------ |
-| i    | `<A-c>`  | fb_actions.create,             |
-| i    | `<S-CR>` | fb_actions.create_from_prompt, |
-| i    | `<A-r>`  | fb_actions.rename,             |
-| i    | `<A-m>`  | fb_actions.move,               |
-| i    | `<A-y>`  | fb_actions.copy,               |
-| i    | `<A-d>`  | fb_actions.remove,             |
-| i    | `<C-o>`  | fb_actions.open,               |
-| i    | `<C-g>`  | fb_actions.goto_parent_dir,    |
-| i    | `<C-e>`  | fb_actions.goto_home_dir,      |
-| i    | `<C-w>`  | fb_actions.goto_cwd,           |
-| i    | `<C-t>`  | fb_actions.change_cwd,         |
-| i    | `<C-f>`  | fb_actions.toggle_browser,     |
-| i    | `<C-h>`  | fb_actions.toggle_hidden,      |
-| i    | `<C-s>`  | fb_actions.toggle_all,         |
-| i    | `<bs>`   | fb_actions.backspace,          |
-| n    | `c`      | fb_actions.create,             |
-| n    | `r`      | fb_actions.rename,             |
-| n    | `m`      | fb_actions.move,               |
-| n    | `y`      | fb_actions.copy,               |
-| n    | `d`      | fb_actions.remove,             |
-| n    | `o`      | fb_actions.open,               |
-| n    | `g`      | fb_actions.goto_parent_dir,    |
-| n    | `e`      | fb_actions.goto_home_dir,      |
-| n    | `w`      | fb_actions.goto_cwd,           |
-| n    | `t`      | fb_actions.change_cwd,         |
-| n    | `f`      | fb_actions.toggle_browser,     |
-| n    | `h`      | fb_actions.toggle_hidden,      |
-| n    | `s`      | fb_actions.toggle_all,         |
+| Mode | Key      | Description        |
+| ---- | -------- | ------------------ |
+| i    | `<A-c>`  | Create             |
+| i    | `<S-CR>` | Create_from_prompt |
+| i    | `<A-r>`  | Rename             |
+| i    | `<A-m>`  | Move               |
+| i    | `<A-y>`  | Copy               |
+| i    | `<A-d>`  | Remove             |
+| i    | `<C-o>`  | Open               |
+| i    | `<C-g>`  | Goto_parent_dir    |
+| i    | `<C-e>`  | Goto_home_dir      |
+| i    | `<C-w>`  | Goto_cwd           |
+| i    | `<C-t>`  | Change_cwd         |
+| i    | `<C-f>`  | Toggle_browser     |
+| i    | `<C-h>`  | Toggle_hidden      |
+| i    | `<C-s>`  | Toggle_all         |
+| i    | `<bs>`   | Backspace          |
+| n    | `c`      | Create             |
+| n    | `r`      | Rename             |
+| n    | `m`      | Move               |
+| n    | `y`      | Copy               |
+| n    | `d`      | Remove             |
+| n    | `o`      | Open               |
+| n    | `g`      | Goto_parent_dir    |
+| n    | `e`      | Goto_home_dir      |
+| n    | `w`      | Goto_cwd           |
+| n    | `t`      | Change_cwd         |
+| n    | `f`      | Toggle_browser     |
+| n    | `h`      | Toggle_hidden      |
+| n    | `s`      | Toggle_all         |
 
 ## [mini.comment](https://github.com/echasnovski/mini.comment)
 
