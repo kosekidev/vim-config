@@ -105,71 +105,44 @@ In the summary panel, you have this commands :
 
 A blazing fast and easy to configure Neovim statusline written in Lua.
 
-## [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+## [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
 
-A file explorer for Neovim
+telescope-file-browser.nvim is a file browser extension for telescope.nvim. It supports synchronized creation, deletion, renaming, and moving of files and folders powered by telescope.nvim and plenary.nvim.
 
-| Mode | Key         | Description    |
-| ---- | ----------- | -------------- |
-| n    | `<leader>e` | Toggle Neotree |
+| Mode | Key         | Description       |
+| ---- | ----------- | ----------------- |
+| n    | `<leader>e` | Open file browser |
 
-In neo-tree :
-
-| Key              | Description            |
-| ---------------- | ---------------------- |
-| `<C-]>`          | CD                     |
-| `<C-e>`          | Open: In Place         |
-| `<C-k>`          | Info                   |
-| `<C-r>`          | Rename: Omit Filename  |
-| `<C-t>`          | Open: New Tab          |
-| `<C-v>`          | Open: Vertical Split   |
-| `<C-x>`          | Open: Horizontal Split |
-| `<BS>`           | Close Directory        |
-| `<CR>`           | Open                   |
-| `<Tab>`          | Open Preview           |
-| `>`              | Next Sibling           |
-| `<`              | Previous Sibling       |
-| `.`              | Run Command            |
-| `-`              | Up                     |
-| `a`              | Create                 |
-| `bd`             | Delete Bookmarked      |
-| `bmv`            | Move Bookmarked        |
-| `B`              | Toggle No Buffer       |
-| `c`              | Copy                   |
-| `C`              | Toggle Git Clean       |
-| `[c`             | Prev Git               |
-| `]c`             | Next Git               |
-| `d`              | Delete                 |
-| `D`              | Trash                  |
-| `E`              | Expand All             |
-| `e`              | Rename: Basename       |
-| `]e`             | Next Diagnostic        |
-| `[e`             | Prev Diagnostic        |
-| `F`              | Clean Filter           |
-| `f`              | Filter                 |
-| `g?`             | Help                   |
-| `gy`             | Copy Absolute Path     |
-| `H`              | Toggle Dotfiles        |
-| `I`              | Toggle Git Ignore      |
-| `J`              | Last Sibling           |
-| `K`              | First Sibling          |
-| `m`              | Toggle Bookmark        |
-| `o`              | Open                   |
-| `O`              | Open: No Window Picker |
-| `p`              | Paste                  |
-| `P`              | Parent Directory       |
-| `q`              | Close                  |
-| `r`              | Rename                 |
-| `R`              | Refresh                |
-| `s`              | Run System             |
-| `S`              | Search                 |
-| `U`              | Toggle Hidden          |
-| `W`              | Collapse               |
-| `x`              | Cut                    |
-| `y`              | Copy Name              |
-| `Y`              | Copy Relative Path     |
-| `<2-LeftMouse>`  | Open                   |
-| `<2-RightMouse>` | CD                     |
+| Mode | Key      | Description                    |
+| ---- | -------- | ------------------------------ |
+| i    | `<A-c>`  | fb_actions.create,             |
+| i    | `<S-CR>` | fb_actions.create_from_prompt, |
+| i    | `<A-r>`  | fb_actions.rename,             |
+| i    | `<A-m>`  | fb_actions.move,               |
+| i    | `<A-y>`  | fb_actions.copy,               |
+| i    | `<A-d>`  | fb_actions.remove,             |
+| i    | `<C-o>`  | fb_actions.open,               |
+| i    | `<C-g>`  | fb_actions.goto_parent_dir,    |
+| i    | `<C-e>`  | fb_actions.goto_home_dir,      |
+| i    | `<C-w>`  | fb_actions.goto_cwd,           |
+| i    | `<C-t>`  | fb_actions.change_cwd,         |
+| i    | `<C-f>`  | fb_actions.toggle_browser,     |
+| i    | `<C-h>`  | fb_actions.toggle_hidden,      |
+| i    | `<C-s>`  | fb_actions.toggle_all,         |
+| i    | `<bs>`   | fb_actions.backspace,          |
+| n    | `c`      | fb_actions.create,             |
+| n    | `r`      | fb_actions.rename,             |
+| n    | `m`      | fb_actions.move,               |
+| n    | `y`      | fb_actions.copy,               |
+| n    | `d`      | fb_actions.remove,             |
+| n    | `o`      | fb_actions.open,               |
+| n    | `g`      | fb_actions.goto_parent_dir,    |
+| n    | `e`      | fb_actions.goto_home_dir,      |
+| n    | `w`      | fb_actions.goto_cwd,           |
+| n    | `t`      | fb_actions.change_cwd,         |
+| n    | `f`      | fb_actions.toggle_browser,     |
+| n    | `h`      | fb_actions.toggle_hidden,      |
+| n    | `s`      | fb_actions.toggle_all,         |
 
 ## [mini.comment](https://github.com/echasnovski/mini.comment)
 
