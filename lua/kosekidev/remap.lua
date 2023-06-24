@@ -26,3 +26,11 @@ vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
 vim.keymap.set("n", "<leader>Y", '"+Y')
 
 vim.keymap.set({ "n", "v" }, "<leader>d", '"_d')
+
+
+vim.keymap.set("n", "<leader>cd", function()
+  vim.api.nvim_set_option("background", "dark")
+end)
+vim.keymap.set("n", "<leader>cl", function()
+  vim.api.nvim_set_option("background", "light")
+end)
