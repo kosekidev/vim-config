@@ -10,7 +10,6 @@ After installation, do :checkhealth to check if you have all required dependenci
 
 | Mode | Keymap      | Description                                                       |
 | ---- | ----------- | ----------------------------------------------------------------- |
-| n    | `<leader>e` | Open file explorer                                                |
 | n, v | `<leader>y` | Yank in system clipboard                                          |
 | n    | `<leader>Y` | Yank from cursor to the end of the line in system clipboard       |
 | n, v | `<leader>d` | Delete the selection/object in the black hole register            |
