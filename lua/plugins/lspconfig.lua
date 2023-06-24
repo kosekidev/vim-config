@@ -99,7 +99,7 @@ return {
     local lspconfig = require("lspconfig")
     lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
     lspconfig.tsserver.setup({
-      on_attach = function(client, bufnr)
+      on_attach = function(client, _)
         client.server_capabilities.documentFormattingProvider = false
       end,
     })
