@@ -7,6 +7,9 @@ return {
       autotag = {
         enable = true,
       },
+      indent = {
+        enable = true
+      },
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,
@@ -15,6 +18,7 @@ return {
       ensure_installed = {
         "rust",
         "html",
+        "css",
         "javascript",
         "typescript",
         "tsx",
