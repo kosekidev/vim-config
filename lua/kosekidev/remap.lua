@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
+vim.keymap.set("n", "<leader>e", ":Telescope file_browser path=%:p:h select_buffer=true<CR>", { silent = true })
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { silent = true })
 vim.keymap.set("n", "<leader>gs", ":LazyGit<CR>", { silent = true })
 vim.keymap.set("n", "<leader>cl", "<cmd>LspInfo<CR>", { silent = true })
