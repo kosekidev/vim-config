@@ -34,3 +34,5 @@ end)
 vim.keymap.set("n", "<leader>cl", function()
   vim.api.nvim_set_option("background", "light")
 end)
+
+vim.keymap.set("n", "<C-S>", "<cmd>silent !tmux neww<CR>")
