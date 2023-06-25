@@ -220,14 +220,6 @@ Syntax aware text-objects, select, move, swap, and peek support.
 | n    | `[f`   | Go to previous start function |
 | n    | `[F`   | Go to previous end function   |
 
-## [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-
-A neovim plugin to persist and toggle multiple terminals during an editing session
-
-| Mode | Keymap  | Description     |
-| ---- | ------- | --------------- |
-| n    | `<C-\>` | Toggle terminal |
-
 ## [undotree](https://github.com/mbbill/undotree)
 
 Undotree visualizes the undo history and makes it easy to browse and switch between different undo branches.
