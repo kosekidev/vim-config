@@ -301,7 +301,3 @@ Todo-comments is a lua plugin for Neovim 0.5 to highlight and search for todo co
 | n    | `[t`         | Previous todo comment |
 | n    | `<leader>st` | Todo                  |
 | n    | `<leader>sT` | Todo/Fix/Fixme        |
-
-## [auto-dark-mode](https://github.com/f-person/auto-dark-mode.nvim)
-
-A Neovim plugin for macOS that automatically changes the editor appearance based on system settings.
