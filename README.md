@@ -21,6 +21,7 @@ After installation, do :checkhealth to check if you have all required dependenci
 | n    | `<C-L>`     | Move cursor to the right window                                   |
 | n    | `<C-J>`     | Move cursor to the bottom window                                  |
 | n    | `<C-K>`     | Move cursor to the top window                                     |
+| n    | `<C-S>`     | Open new cwd tmux session                                         |
 
 ## [lazy.vim](https://github.com/folke/lazy.nvim)
 
