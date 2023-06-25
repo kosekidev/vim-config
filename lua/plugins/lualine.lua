@@ -3,6 +3,5 @@ return {
   event = "VeryLazy",
   opts = {
     theme = "catppuccin",
-    extensions = { 'toggleterm' }
   }
 }
