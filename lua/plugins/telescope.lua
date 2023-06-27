@@ -1,5 +1,3 @@
-local builtin = require("telescope.builtin")
-
 return {
   "nvim-telescope/telescope.nvim",
   tag = "0.1.1",
@@ -23,8 +21,8 @@ return {
     require("telescope").load_extension "file_browser"
   end,
   keys = {
-    { "<leader>ff", builtin.find_files,                                 desc = "Find Files" },
-    { "<leader>fg", builtin.live_grep,                                  desc = "Grep" },
+    { "<leader>ff", "<cmd>Telescope find_files<CR>",                    desc = "Find Files" },
+    { "<leader>fg", "<cmd>Telescope live_grep<CR>",                     desc = "Grep" },
     { "<leader>,",  "<cmd>Telescope buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },
     { "<leader>:",  "<cmd>Telescope command_history<cr>",               desc = "Command History" },
     -- find
@@ -45,6 +43,8 @@ return {
     {
       "<leader>ss",
       function()
+        local builtin = require("telescope.builtin")
+
         builtin.lsp_document_symbols({
           symbols = {
             "Class",
@@ -65,6 +65,8 @@ return {
     {
       "<leader>sS",
       function()
+        local builtin = require("telescope.builtin")
+
         builtin.lsp_dynamic_workspace_symbols({
           symbols = {
             "Class",
