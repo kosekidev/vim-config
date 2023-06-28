@@ -8,7 +8,7 @@ return {
 
     local ai = require("mini.ai")
 
-    require('mini.ai').setup({
+    ai.setup({
       n_lines = 500,
       custom_textobjects = {
         o = ai.gen_spec.treesitter({
