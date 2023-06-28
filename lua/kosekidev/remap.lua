@@ -3,6 +3,8 @@ vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { silent = true })
 vim.keymap.set("n", "<leader>gs", ":LazyGit<CR>", { silent = true })
 vim.keymap.set("n", "<leader>cl", "<cmd>LspInfo<CR>", { silent = true })
 
+vim.keymap.set({ "n", "i" }, "<esc>", "<cmd>noh<CR><esc>", { silent = true })
+
 vim.keymap.set("n", "<C-H>", "<C-W>h", { silent = true })
 vim.keymap.set("n", "<C-L>", "<C-W>l", { silent = true })
 vim.keymap.set("n", "<C-J>", "<C-W>j", { silent = true })
