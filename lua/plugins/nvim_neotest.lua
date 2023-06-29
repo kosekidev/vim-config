@@ -8,6 +8,7 @@ return {
       "haydenmeade/neotest-jest",
       "rouge8/neotest-rust",
     },
+    lazy = true,
     config = function()
       require("neotest").setup({
         adapters = {
@@ -35,15 +36,11 @@ return {
       vim.keymap.set("n", "<leader>ta", function()
         require("neotest").run.attach()
       end)
-      vim.keymap.set("n", "<leader>tv", function()
-        require("neotest").summary.toggle()
-      end)
     end,
-  },
-  {
-    "folke/neodev.nvim",
-    opts = {
-      library = { plugins = { "neotest" }, types = true },
-    },
+    keys = {
+      { "<leader>tv", function()
+        require("neotest").summary.toggle()
+      end }
+    }
   },
 }

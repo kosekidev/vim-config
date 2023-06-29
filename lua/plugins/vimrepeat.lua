@@ -1,1 +1,1 @@
-return { "tpope/vim-repeat", event = "VeryLazy" }
+return { "tpope/vim-repeat" }
