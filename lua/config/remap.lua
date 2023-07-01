@@ -56,6 +56,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", '"_d', {
   desc = "Delete in the blackhole register"
 })
 
+vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
 
 vim.keymap.set("n", "<leader>ct", function()
   if vim.o.background == "dark" then
