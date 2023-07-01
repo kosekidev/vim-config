@@ -70,38 +70,6 @@ Plugin for calling lazygit from within neovim.
 | ---- | ------------ | ------------------ |
 | n    | `<leader>gs` | Open Mason manager |
 
-## [Neotest](https://github.com/nvim-neotest/neotest/)
-
-| Mode | Keymap        | Description             |
-| ---- | ------------- | ----------------------- |
-| n    | `<leader>tv`  | Open summary panel      |
-| n    | `<leader>tnr` | Run the nearest test    |
-| n    | `<leader>tfr` | Run the current file    |
-| n    | `<leader>ts`  | Stop the nearest test   |
-| n    | `<leader>ta`  | Attach the nearest test |
-
-In the summary panel, you have this commands :
-
-| Mode | Key    | Description     |
-| ---- | ------ | --------------- |
-| n    | `a`    | Attach          |
-| n    | `M`    | Clear mark      |
-| n    | `T`    | Clear target    |
-| n    | `d`    | Debug           |
-| n    | `D`    | Debug marked    |
-| n    | `<CR>` | Expand          |
-| n    | `e`    | Expand all      |
-| n    | `i`    | Jump into       |
-| n    | `m`    | Mark            |
-| n    | `J`    | Next failed     |
-| n    | `o`    | Output          |
-| n    | `K`    | Previous failed |
-| n    | `r`    | Run             |
-| n    | `R`    | Run marked      |
-| n    | `O`    | Short           |
-| n    | `u`    | Stop            |
-| n    | `t`    | Target          |
-
 ## [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 
 A blazing fast and easy to configure Neovim statusline written in Lua.
@@ -278,11 +246,10 @@ Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the late
 | n    | `<leader>ff` | Find files               |
 | n    | `<leader>:`  | Command history          |
 | n    | `<leader>fb` | Files Buffers            |
-| n    | `<leader>,`  | Switch Buffers           |
-| n    | `<leader>fr` | Recents                  |
+| n    | `<leader>fr` | Recents files            |
 | n    | `<leader>sd` | Diagnostics              |
 | n    | `<leader>sD` | Diagnostics in workspace |
-| n    | `<leader>fg` | Grep                     |
+| n    | `<leader>fg` | Grep files               |
 | n    | `<leader>sh` | Help pages               |
 | n    | `<leader>sH` | Search Highlight groups  |
 | n    | `<leader>sk` | Key Maps                 |
