@@ -11,6 +11,10 @@ return {
     lazy = true,
     config = function()
       require("neotest").setup({
+        quickfix = {
+          enabled = true,
+          open = false
+        },
         adapters = {
           require("neotest-jest")({
             jestCommand = "npm test --",
