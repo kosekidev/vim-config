@@ -11,7 +11,6 @@ return {
         notify = true,
         mini = true,
         mason = true,
-        neotest = true,
         noice = true,
         native_lsp = {
           enabled = true

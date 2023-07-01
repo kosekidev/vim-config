@@ -1,6 +1,5 @@
 return {
   "nvim-telescope/telescope.nvim",
-  tag = "0.1.1",
   dependencies = { "nvim-lua/plenary.nvim" },
   lazy = true,
   opts = {
@@ -21,17 +20,16 @@ return {
     require("telescope").load_extension "file_browser"
   end,
   keys = {
-    { "<leader>ff", "<cmd>Telescope find_files<CR>",                    desc = "Find Files" },
-    { "<leader>fg", "<cmd>Telescope live_grep<CR>",                     desc = "Grep" },
-    { "<leader>,",  "<cmd>Telescope buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },
-    { "<leader>:",  "<cmd>Telescope command_history<cr>",               desc = "Command History" },
+    { "<leader>ff", "<cmd>Telescope find_files<CR>",          desc = "Find Files" },
+    { "<leader>fg", "<cmd>Telescope live_grep<CR>",           desc = "Grep files" },
+    { "<leader>:",  "<cmd>Telescope command_history<cr>",     desc = "Command History" },
     -- find
-    { "<leader>fb", "<cmd>Telescope buffers<cr>",                       desc = "Buffers" },
-    { "<leader>fr", "<cmd>Telescope oldfiles<cr>",                      desc = "Recent" },
+    { "<leader>fb", "<cmd>Telescope buffers<cr>",             desc = "Opened buffers" },
+    { "<leader>fr", "<cmd>Telescope oldfiles<cr>",            desc = "Recent files" },
     -- search
-    { "<leader>sd", "<cmd>Telescope diagnostics bufnr=0<cr>",           desc = "Document diagnostics" },
-    { "<leader>sD", "<cmd>Telescope diagnostics<cr>",                   desc = "Workspace diagnostics" },
-    { "<leader>sh", "<cmd>Telescope help_tags<cr>",                     desc = "Help Pages" },
+    { "<leader>sd", "<cmd>Telescope diagnostics bufnr=0<cr>", desc = "Document diagnostics" },
+    { "<leader>sD", "<cmd>Telescope diagnostics<cr>",         desc = "Workspace diagnostics" },
+    { "<leader>sh", "<cmd>Telescope help_tags<cr>",           desc = "Help Pages" },
     {
       "<leader>sH",
       "<cmd>Telescope highlights<cr>",

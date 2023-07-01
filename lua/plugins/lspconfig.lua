@@ -9,8 +9,12 @@ return {
       "williamboman/mason.nvim",
       build = ":MasonUpdate",
       init = function()
-        vim.keymap.set("n", "<leader>cm", ":Mason<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>cm", ":Mason<CR>", {
+          silent = true,
+          desc = "Open Mason manager"
+        })
       end,
+
     },
     { "williamboman/mason-lspconfig.nvim" }, -- Optional
 
@@ -34,63 +38,65 @@ return {
     local lsp = require("lsp-zero").preset({})
 
     lsp.on_attach(function(_, bufnr)
-      local opts = { buffer = bufnr, remap = false }
+      local build_opts = function(keymap_desc)
+        return { buffer = bufnr, remap = false, desc = keymap_desc }
+      end
 
       vim.keymap.set("n", "<leader>vd", function()
         vim.diagnostic.open_float()
-      end, opts)
+      end, build_opts("Open float inline diagnostic"))
       vim.keymap.set("n", "<leader>ca", function()
         vim.lsp.buf.code_action()
-      end, opts)
+      end, build_opts("Code action"))
       vim.keymap.set("n", "<leader>cr", function()
         vim.lsp.buf.rename()
-      end, opts)
+      end, build_opts("Rename"))
       vim.keymap.set({ "n", "v" }, "<leader>cf", function()
         vim.lsp.buf.format()
-      end, opts)
+      end, build_opts("Format"))
 
       vim.keymap.set("n", "]d", function()
         vim.diagnostic.goto_next()
-      end, opts)
+      end, build_opts("Go to next diagnostic"))
       vim.keymap.set("n", "[d", function()
         vim.diagnostic.goto_prev()
-      end, opts)
+      end, build_opts("Go to previous diagnostic"))
       vim.keymap.set("n", "]w", function()
         vim.diagnostic.goto_next({
           severity = "WARN",
         })
-      end, opts)
+      end, build_opts("Go to next warning"))
       vim.keymap.set("n", "[w", function()
         vim.diagnostic.goto_prev({
           severity = "WARN",
         })
-      end, opts)
+      end, build_opts("Go to next error"))
       vim.keymap.set("n", "]e", function()
         vim.diagnostic.goto_next({
           severity = "ERROR",
         })
-      end, opts)
+      end, build_opts("Go to previous error"))
       vim.keymap.set("n", "[e", function()
         vim.diagnostic.goto_prev({
           severity = "ERROR",
         })
-      end, opts)
+      end, build_opts("Go to previous diagnostic"))
 
       vim.keymap.set("n", "gd", function()
         vim.lsp.buf.definition()
-      end, opts)
+      end, build_opts("Go to definition"))
       vim.keymap.set("n", "gr", function()
         vim.lsp.buf.references()
-      end, opts)
+      end, build_opts("Go to references"))
       vim.keymap.set("n", "K", function()
         vim.lsp.buf.hover()
-      end, opts)
+      end, build_opts("Hover"))
       vim.keymap.set("n", "gK", function()
         vim.lsp.buf.signature_help()
-      end, opts)
+      end, build_opts("Signature help"))
       vim.keymap.set("i", "<C-H>", function()
         vim.lsp.buf.signature_help()
-      end, opts)
+      end, build_opts("Signature help"))
 
       lsp.buffer_autoformat()
     end)
