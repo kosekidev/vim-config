@@ -16,7 +16,8 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
 vim.opt.updatetime = 150
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
+vim.opt.undodir = os.getenv((vim.loop.os_uname().sysname == "Windows_NT") and "UserProfile" or "HOME") .. "/.vim/undodir"
 vim.opt.wildignore:append { "*/node_modules/*" }
 
 vim.opt.hlsearch = true
