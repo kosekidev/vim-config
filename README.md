@@ -63,49 +63,65 @@ Easily install and manage LSP servers, DAP servers, linters, and formatters.
 | ---- | ------------ | ------------------ |
 | n    | `<leader>cm` | Open Mason manager |
 
-## [Lazygit](https://github.com/kdheepak/lazygit.nvim)
+## [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 
-Plugin for calling lazygit from within neovim.
+Lua snippets plugin
 
-| Mode | Keymap       | Description        |
-| ---- | ------------ | ------------------ |
-| n    | `<leader>gs` | Open Mason manager |
+## [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
-## [Neotest](https://github.com/nvim-neotest/neotest/)
+Snippets collection for a set of different programming languages.
 
-| Mode | Keymap        | Description             |
-| ---- | ------------- | ----------------------- |
-| n    | `<leader>tv`  | Open summary panel      |
-| n    | `<leader>tnr` | Run the nearest test    |
-| n    | `<leader>tfr` | Run the current file    |
-| n    | `<leader>ts`  | Stop the nearest test   |
-| n    | `<leader>ta`  | Attach the nearest test |
+## [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
 
-In the summary panel, you have this commands :
+Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
 
-| Mode | Key    | Description     |
-| ---- | ------ | --------------- |
-| n    | `a`    | Attach          |
-| n    | `M`    | Clear mark      |
-| n    | `T`    | Clear target    |
-| n    | `d`    | Debug           |
-| n    | `D`    | Debug marked    |
-| n    | `<CR>` | Expand          |
-| n    | `e`    | Expand all      |
-| n    | `i`    | Jump into       |
-| n    | `m`    | Mark            |
-| n    | `J`    | Next failed     |
-| n    | `o`    | Output          |
-| n    | `K`    | Previous failed |
-| n    | `r`    | Run             |
-| n    | `R`    | Run marked      |
-| n    | `O`    | Short           |
-| n    | `u`    | Stop            |
-| n    | `t`    | Target          |
+## [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
-## [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+A completion engine plugin for neovim written in Lua.
 
-A blazing fast and easy to configure Neovim statusline written in Lua.
+| Mode | Keymap      | Description     |
+| ---- | ----------- | --------------- |
+| n    | `<C-f>`     | Scroll forward  |
+| n    | `<C-b>`     | Scroll backward |
+| n    | `<C-Space>` | Complete        |
+| n    | `<C-e>`     | Abort           |
+| n    | `<CR>`      | Confirm         |
+
+## [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+The goal of nvim-treesitter is both to provide a simple and easy way to use the interface for tree-sitter in Neovim and to provide some basic functionality such as highlighting based on it.
+
+## [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
+
+Syntax aware text-objects, select, move, swap, and peek support.
+
+| Mode | Keymap | Description                   |
+| ---- | ------ | ----------------------------- |
+| n    | `]f`   | Go to next start function     |
+| n    | `]F`   | Go to next end function       |
+| n    | `[f`   | Go to previous start function |
+| n    | `[F`   | Go to previous end function   |
+
+## [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+
+Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the latest awesome features from neovim core. Telescope is centered around modularity, allowing for easy customization.
+
+| Mode | Keymap       | Description              |
+| ---- | ------------ | ------------------------ |
+| n    | `<leader>ff` | Find files               |
+| n    | `<leader>:`  | Command history          |
+| n    | `<leader>fb` | Files Buffers            |
+| n    | `<leader>fr` | Recents files            |
+| n    | `<leader>sd` | Diagnostics              |
+| n    | `<leader>sD` | Diagnostics in workspace |
+| n    | `<leader>fg` | Grep files               |
+| n    | `<leader>sh` | Help pages               |
+| n    | `<leader>sH` | Search Highlight groups  |
+| n    | `<leader>sk` | Key Maps                 |
+| n    | `<leader>sM` | Man Pages                |
+| n    | `<leader>sm` | Jump to Mark             |
+| n    | `<leader>ss` | Goto symbol              |
+| n    | `<leader>sS` | Goto symbol in workspace |
 
 ## [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
 
@@ -145,6 +161,62 @@ telescope-file-browser.nvim is a file browser extension for telescope.nvim. It s
 | n    | `f`      | Toggle_browser     |
 | n    | `h`      | Toggle_hidden      |
 | n    | `s`      | Toggle_all         |
+
+## [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+
+A blazing fast and easy to configure Neovim statusline written in Lua.
+
+## [Catppuccin](https://github.com/catppuccin/nvim)
+
+This port of Catppuccin is special because it was the first one and the one that originated the project itself. Given this, it's important to acknowledge that it all didn't come to be what it is now out of nowhere. So, if you are interested in knowing more about the initial stages of the theme, you can find it under the v0.1 tag
+
+## [Neotest](https://github.com/nvim-neotest/neotest/)
+
+| Mode | Keymap        | Description             |
+| ---- | ------------- | ----------------------- |
+| n    | `<leader>tv`  | Open summary panel      |
+| n    | `<leader>tnr` | Run the nearest test    |
+| n    | `<leader>tfr` | Run the current file    |
+| n    | `<leader>ts`  | Stop the nearest test   |
+| n    | `<leader>ta`  | Attach the nearest test |
+
+In the summary panel, you have this commands :
+
+| Mode | Key    | Description     |
+| ---- | ------ | --------------- |
+| n    | `a`    | Attach          |
+| n    | `M`    | Clear mark      |
+| n    | `T`    | Clear target    |
+| n    | `d`    | Debug           |
+| n    | `D`    | Debug marked    |
+| n    | `<CR>` | Expand          |
+| n    | `e`    | Expand all      |
+| n    | `i`    | Jump into       |
+| n    | `m`    | Mark            |
+| n    | `J`    | Next failed     |
+| n    | `o`    | Output          |
+| n    | `K`    | Previous failed |
+| n    | `r`    | Run             |
+| n    | `R`    | Run marked      |
+| n    | `O`    | Short           |
+| n    | `u`    | Stop            |
+| n    | `t`    | Target          |
+
+## [Lazygit](https://github.com/kdheepak/lazygit.nvim)
+
+Plugin for calling lazygit from within neovim.
+
+| Mode | Keymap       | Description        |
+| ---- | ------------ | ------------------ |
+| n    | `<leader>gs` | Open Mason manager |
+
+## [undotree](https://github.com/mbbill/undotree)
+
+Undotree visualizes the undo history and makes it easy to browse and switch between different undo branches.
+
+| Mode | Keymap      | Description   |
+| ---- | ----------- | ------------- |
+| n    | `<leader>u` | Open Undotree |
 
 ## [mini.comment](https://github.com/echasnovski/mini.comment)
 
@@ -207,29 +279,6 @@ Notification manager
 
 Ui component library
 
-## [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-
-The goal of nvim-treesitter is both to provide a simple and easy way to use the interface for tree-sitter in Neovim and to provide some basic functionality such as highlighting based on it.
-
-## [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
-
-Syntax aware text-objects, select, move, swap, and peek support.
-
-| Mode | Keymap | Description                   |
-| ---- | ------ | ----------------------------- |
-| n    | `]f`   | Go to next start function     |
-| n    | `]F`   | Go to next end function       |
-| n    | `[f`   | Go to previous start function |
-| n    | `[F`   | Go to previous end function   |
-
-## [undotree](https://github.com/mbbill/undotree)
-
-Undotree visualizes the undo history and makes it easy to browse and switch between different undo branches.
-
-| Mode | Keymap      | Description   |
-| ---- | ----------- | ------------- |
-| n    | `<leader>u` | Open Undotree |
-
 ## [vim-repeat](https://github.com/tpope/vim-repeat)
 
 If you've ever tried using the . command after a plugin map, you were likely disappointed to discover it only repeated the last native command inside that map, rather than the map as a whole. That disappointment ends today. Repeat.vim remaps . in a way that plugins can tap into it.
@@ -238,59 +287,9 @@ If you've ever tried using the . command after a plugin map, you were likely dis
 
 Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more. The plugin provides mappings to easily delete, change and add such surroundings in pairs.
 
-## [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-
-Lua snippets plugin
-
-## [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
-
-Snippets collection for a set of different programming languages.
-
 ## [dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
 Pimp ui
-
-## [Catppuccin](https://github.com/catppuccin/nvim)
-
-This port of Catppuccin is special because it was the first one and the one that originated the project itself. Given this, it's important to acknowledge that it all didn't come to be what it is now out of nowhere. So, if you are interested in knowing more about the initial stages of the theme, you can find it under the v0.1 tag
-
-## [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
-
-Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
-
-## [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-
-A completion engine plugin for neovim written in Lua.
-
-| Mode | Keymap      | Description     |
-| ---- | ----------- | --------------- |
-| n    | `<C-f>`     | Scroll forward  |
-| n    | `<C-b>`     | Scroll backward |
-| n    | `<C-Space>` | Complete        |
-| n    | `<C-e>`     | Abort           |
-| n    | `<CR>`      | Confirm         |
-
-## [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-
-Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the latest awesome features from neovim core. Telescope is centered around modularity, allowing for easy customization.
-
-| Mode | Keymap       | Description              |
-| ---- | ------------ | ------------------------ |
-| n    | `<leader>ff` | Find files               |
-| n    | `<leader>:`  | Command history          |
-| n    | `<leader>fb` | Files Buffers            |
-| n    | `<leader>,`  | Switch Buffers           |
-| n    | `<leader>fr` | Recents                  |
-| n    | `<leader>sd` | Diagnostics              |
-| n    | `<leader>sD` | Diagnostics in workspace |
-| n    | `<leader>fg` | Grep                     |
-| n    | `<leader>sh` | Help pages               |
-| n    | `<leader>sH` | Search Highlight groups  |
-| n    | `<leader>sk` | Key Maps                 |
-| n    | `<leader>sM` | Man Pages                |
-| n    | `<leader>sm` | Jump to Mark             |
-| n    | `<leader>ss` | Goto symbol              |
-| n    | `<leader>sS` | Goto symbol in workspace |
 
 ## [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
 
