@@ -10,10 +10,10 @@ vim.keymap.set("n", "<leader>cl", "<cmd>LspInfo<CR>",
 vim.keymap.set({ "n", "i" }, "<esc>", "<cmd>noh<CR><esc>",
   { silent = true, desc = "Escape and remove highlighting" })
 
-vim.keymap.set("n", "<C-H>", "<C-W>h", { silent = true, desc = "Go to left window" })
-vim.keymap.set("n", "<C-L>", "<C-W>l", { silent = true, desc = "Go to right window" })
-vim.keymap.set("n", "<C-J>", "<C-W>j", { silent = true, desc = "Go to bottom window" })
-vim.keymap.set("n", "<C-K>", "<C-W>k", { silent = true, desc = "Go to top window" })
+vim.keymap.set("n", "<C-H>", "<cmd>NvimTmuxNavigateLeft<CR>", { silent = true, desc = "Go to left window" })
+vim.keymap.set("n", "<C-L>", "<cmd>NvimTmuxNavigateRight<CR>", { silent = true, desc = "Go to right window" })
+vim.keymap.set("n", "<C-J>", "<cmd>NvimTmuxNavigateDown<CR>", { silent = true, desc = "Go to bottom window" })
+vim.keymap.set("n", "<C-K>", "<cmd>NvimTmuxNavigateUp<CR>", { silent = true, desc = "Go to top window" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {
   desc = "Move selected line up"

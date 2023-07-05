@@ -18,10 +18,10 @@ After installation, do :checkhealth to check if you have all required dependenci
 | v    | `Y`          | Yank from cursor to end of line                                   |
 | v    | `J`          | Move selection down                                               |
 | v    | `K`          | Move selection up                                                 |
-| n    | `<C-H>`      | Move cursor to the left window                                    |
-| n    | `<C-L>`      | Move cursor to the right window                                   |
-| n    | `<C-J>`      | Move cursor to the bottom window                                  |
-| n    | `<C-K>`      | Move cursor to the top window                                     |
+| n    | `<C-H>`      | Move cursor to the left window / tmux window                      |
+| n    | `<C-L>`      | Move cursor to the right window / tmux window                     |
+| n    | `<C-J>`      | Move cursor to the bottom window / tmux window                    |
+| n    | `<C-K>`      | Move cursor to the top window / tmux window                       |
 | n    | `<C-S>`      | Open new cwd tmux session                                         |
 
 ## [lazy.vim](https://github.com/folke/lazy.nvim)
@@ -301,3 +301,7 @@ Todo-comments is a lua plugin for Neovim 0.5 to highlight and search for todo co
 | n    | `[t`         | Previous todo comment |
 | n    | `<leader>st` | Todo                  |
 | n    | `<leader>sT` | Todo/Fix/Fixme        |
+
+## [nvim-tmux-navigation](https://github.com/alexghergh/nvim-tmux-navigation)
+
+The plugin is a rewrite of Christoomey's Vim Tmux Navigator, with a few added benefits
