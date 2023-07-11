@@ -1,5 +1,7 @@
-vim.keymap.set("n", "<leader>e", ":Telescope file_browser path=%:p:h select_buffer=true respect_gitignore=false<CR>",
+vim.keymap.set("n", "<leader>e", ":Telescope file_browser path=%:p:h select_buffer=true respect_gitignore=true<CR>",
   { silent = true, desc = "Open Telescope file browser" })
+vim.keymap.set("n", "<leader>E", ":Telescope file_browser path=%:p:h select_buffer=true respect_gitignore=false<CR>",
+  { silent = true, desc = "Open Telescope file browser. Ignore gitignore" })
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>",
   { silent = true, desc = "Open lazy.vim manager" })
 vim.keymap.set("n", "<leader>gs", ":LazyGit<CR>",
