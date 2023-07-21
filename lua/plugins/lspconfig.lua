@@ -94,9 +94,6 @@ return {
       vim.keymap.set("n", "gK", function()
         vim.lsp.buf.signature_help()
       end, build_opts("Signature help"))
-      vim.keymap.set("i", "<C-H>", function()
-        vim.lsp.buf.signature_help()
-      end, build_opts("Signature help"))
 
       lsp.buffer_autoformat()
     end)
