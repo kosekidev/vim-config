@@ -170,38 +170,6 @@ A blazing fast and easy to configure Neovim statusline written in Lua.
 
 This port of Catppuccin is special because it was the first one and the one that originated the project itself. Given this, it's important to acknowledge that it all didn't come to be what it is now out of nowhere. So, if you are interested in knowing more about the initial stages of the theme, you can find it under the v0.1 tag
 
-## [Neotest](https://github.com/nvim-neotest/neotest/)
-
-| Mode | Keymap        | Description             |
-| ---- | ------------- | ----------------------- |
-| n    | `<leader>tv`  | Open summary panel      |
-| n    | `<leader>tnr` | Run the nearest test    |
-| n    | `<leader>tfr` | Run the current file    |
-| n    | `<leader>ts`  | Stop the nearest test   |
-| n    | `<leader>ta`  | Attach the nearest test |
-
-In the summary panel, you have this commands :
-
-| Mode | Key    | Description     |
-| ---- | ------ | --------------- |
-| n    | `a`    | Attach          |
-| n    | `M`    | Clear mark      |
-| n    | `T`    | Clear target    |
-| n    | `d`    | Debug           |
-| n    | `D`    | Debug marked    |
-| n    | `<CR>` | Expand          |
-| n    | `e`    | Expand all      |
-| n    | `i`    | Jump into       |
-| n    | `m`    | Mark            |
-| n    | `J`    | Next failed     |
-| n    | `o`    | Output          |
-| n    | `K`    | Previous failed |
-| n    | `r`    | Run             |
-| n    | `R`    | Run marked      |
-| n    | `O`    | Short           |
-| n    | `u`    | Stop            |
-| n    | `t`    | Target          |
-
 ## [Lazygit](https://github.com/kdheepak/lazygit.nvim)
 
 Plugin for calling lazygit from within neovim.
