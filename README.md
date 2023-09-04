@@ -71,9 +71,9 @@ Lua snippets plugin
 
 Snippets collection for a set of different programming languages.
 
-## [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
+## [guard](https://github.com/nvimdev/guard.nvim)
 
-Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
+Async formatting and linting utility for neovim.
 
 ## [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
