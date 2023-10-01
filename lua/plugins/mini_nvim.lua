@@ -3,7 +3,7 @@ return {
   dependencies = { "nvim-treesitter-textobjects" },
   version = false,
   config = function()
-    require("mini.pairs").setup()
+    -- require("mini.pairs").setup()
     require('mini.comment').setup()
 
     local ai = require("mini.ai")
