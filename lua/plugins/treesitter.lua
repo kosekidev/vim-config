@@ -7,6 +7,7 @@ return {
       'JoosepAlviste/nvim-ts-context-commentstring',
     },
     opts = {
+      indent = true,
       autotag = {
         enable = true,
       },
