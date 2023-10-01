@@ -1,123 +1,73 @@
 return {
-	"VonHeikemen/lsp-zero.nvim",
-	branch = "v2.x",
-	dependencies = {
-		{ "neovim/nvim-lspconfig" },
-		{
-			"williamboman/mason.nvim",
-			build = ":MasonUpdate",
-			init = function()
-				vim.keymap.set("n", "<leader>cm", ":Mason<CR>", {
-					silent = true,
-					desc = "Open Mason manager",
-				})
-			end,
-		},
-		{ "williamboman/mason-lspconfig.nvim" },
-		{ "hrsh7th/nvim-cmp" },
-		{ "hrsh7th/cmp-nvim-lsp" },
-		{
-			"L3MON4D3/LuaSnip",
-			dependencies = { "rafamadriz/friendly-snippets" },
-			config = function()
-				require("luasnip.loaders.from_vscode").lazy_load()
-			end,
-		},
-		{ "hrsh7th/cmp-path" },
-		{ "hrsh7th/cmp-buffer" },
-		{ "saadparwaiz1/cmp_luasnip" },
-		{ "rafamadriz/friendly-snippets" },
-	},
-	init = function()
-		local lsp = require("lsp-zero").preset({})
+  "neovim/nvim-lspconfig",
+  config = function()
+    local lspconfig = require('lspconfig')
 
-		lsp.on_attach(function(_, bufnr)
-			local build_opts = function(keymap_desc)
-				return { buffer = bufnr, remap = false, desc = keymap_desc }
-			end
+    local on_attach = function(client, bufnr)
+      if client.server_capabilities.documentFormattingProvider then
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          group = vim.api.nvim_create_augroup("Format", { clear = true }),
+          buffer = bufnr,
+          callback = function() vim.lsp.buf.format() end
+        })
+      end
+    end
 
-			vim.keymap.set("n", "<leader>vd", function()
-				vim.diagnostic.open_float()
-			end, build_opts("Open float inline diagnostic"))
-			vim.keymap.set("n", "<leader>ca", function()
-				vim.lsp.buf.code_action()
-			end, build_opts("Code action"))
-			vim.keymap.set("n", "<leader>cr", function()
-				vim.lsp.buf.rename()
-			end, build_opts("Rename"))
-			vim.keymap.set({ "n", "v" }, "<leader>cf", function()
-				vim.lsp.buf.format()
-			end, build_opts("Format"))
+    lspconfig.lua_ls.setup {
+      on_attach = on_attach,
+      settings = {
+        Lua = {
+          diagnostics = {
+            globals = { 'vim' }
+          },
+        }
+      }
+    }
+    lspconfig.tsserver.setup {}
+    lspconfig.jsonls.setup {}
+    lspconfig.html.setup {}
+    lspconfig.cssls.setup {}
 
-			vim.keymap.set("n", "]d", function()
-				vim.diagnostic.goto_next()
-			end, build_opts("Go to next diagnostic"))
-			vim.keymap.set("n", "[d", function()
-				vim.diagnostic.goto_prev()
-			end, build_opts("Go to previous diagnostic"))
-			vim.keymap.set("n", "]w", function()
-				vim.diagnostic.goto_next({
-					severity = "WARN",
-				})
-			end, build_opts("Go to next warning"))
-			vim.keymap.set("n", "[w", function()
-				vim.diagnostic.goto_prev({
-					severity = "WARN",
-				})
-			end, build_opts("Go to next error"))
-			vim.keymap.set("n", "]e", function()
-				vim.diagnostic.goto_next({
-					severity = "ERROR",
-				})
-			end, build_opts("Go to previous error"))
-			vim.keymap.set("n", "[e", function()
-				vim.diagnostic.goto_prev({
-					severity = "ERROR",
-				})
-			end, build_opts("Go to previous diagnostic"))
+    vim.keymap.set('n', '<space>vd', vim.diagnostic.open_float, { desc = "Open float inline diagnostic" })
+    vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
+    vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "Go to next diognostic" })
+    vim.keymap.set("n", "[w", function()
+      vim.diagnostic.goto_prev({
+        severity = "WARN",
+      })
+    end, { desc = "Go to next warning" })
+    vim.keymap.set("n", "]w", function()
+      vim.diagnostic.goto_next({
+        severity = "WARN",
+      })
+    end, { desc = "Go to next warning" })
+    vim.keymap.set("n", "[e", function()
+      vim.diagnostic.goto_prev({
+        severity = "ERROR",
+      })
+    end, { desc = "Go to previous error" })
+    vim.keymap.set("n", "]e", function()
+      vim.diagnostic.goto_next({
+        severity = "ERROR",
+      })
+    end, { desc = "Go to next error" })
 
-			vim.keymap.set("n", "gd", function()
-				vim.lsp.buf.definition()
-			end, build_opts("Go to definition"))
-			vim.keymap.set("n", "gr", function()
-				vim.lsp.buf.references()
-			end, build_opts("Go to references"))
-			vim.keymap.set("n", "K", function()
-				vim.lsp.buf.hover()
-			end, build_opts("Hover"))
-			vim.keymap.set("n", "gK", function()
-				vim.lsp.buf.signature_help()
-			end, build_opts("Signature help"))
-		end)
+    vim.api.nvim_create_autocmd('LspAttach', {
+      group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+      callback = function(ev)
+        local build_opts = function(keymap_desc)
+          return { buffer = ev.buf, remap = false, desc = keymap_desc }
+        end
 
-		local lspconfig = require("lspconfig")
-		lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
-		lsp.setup()
+        vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
 
-		local luasnip = require("luasnip")
-		local cmp = require("cmp")
-		local cmp_action = require("lsp-zero").cmp_action()
-
-		require("luasnip.loaders.from_vscode").lazy_load()
-
-		cmp.setup({
-			sources = {
-				{ name = "path" },
-				{ name = "nvim_lsp" },
-				{ name = "buffer", keyword_length = 3 },
-				{ name = "luasnip", keyword_length = 2 },
-			},
-			mapping = {
-				["<C-f>"] = cmp_action.luasnip_jump_forward(),
-				["<C-b>"] = cmp_action.luasnip_jump_backward(),
-				["<Tab>"] = cmp.mapping(function(fallback)
-					if luasnip.expand_or_jumpable() then
-						luasnip.expand_or_jump()
-					else
-						fallback()
-					end
-				end, { "i" }),
-			},
-		})
-	end,
+        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, build_opts("Go to declaration"))
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, build_opts("Go to definition"))
+        vim.keymap.set('n', 'gr', vim.lsp.buf.references, build_opts("Go to references"))
+        vim.keymap.set('n', 'K', vim.lsp.buf.hover, build_opts("Hover"))
+        vim.keymap.set('n', '<space>cr', vim.lsp.buf.rename, build_opts("Rename"))
+        vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, build_opts("Code action"))
+      end
+    })
+  end
 }
