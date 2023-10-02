@@ -30,16 +30,14 @@ After installation, do :checkhealth to check if you have all required dependenci
 | ---- | ----------- | --------------------- |
 | n    | `<leader>l` | Open lazy-vim manager |
 
-## [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim/)
+## [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
-The purpose of this plugin is to bundle all the "boilerplate code" necessary to have nvim-cmp (a popular autocompletion plugin) and nvim-lspconfig working together. And if you opt in, it can use mason.nvim to let you install language servers from inside neovim.
+Configs for the Nvim LSP Client
 
 | Mode | Keymap       | Description         |
 | ---- | ------------ | ------------------- |
 | n    | `<leader>cl` | LSP Info            |
 | n    | `<leader>vd` | Line diagnostics    |
-| n    | `<leader>cf` | Format Document     |
-| v    | `<leader>cf` | Format Range        |
 | n    | `<leader>ca` | Code Action         |
 | n    | `<leader>cr` | Rename              |
 | i    | `<C-H>`      | Signature Help      |
@@ -53,6 +51,22 @@ The purpose of this plugin is to bundle all the "boilerplate code" necessary to 
 | n    | `[e`         | Previous Error      |
 | n    | `]w`         | Next Warning        |
 | n    | `[w`         | Previous Warning    |
+
+## [Conform.nvim](https://github.com/stevearc/conform.nvim)
+
+Lightweight yet powerful formatter plugin for Neovim
+
+## [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+
+Super fast git decorations implemented purely in Lua.
+
+## [Nvim-lint](https://github.com/mfussenegger/nvim-lint)
+
+An asynchronous linter plugin for Neovim (>= 0.6.0) complementary to the built-in Language Server Protocol support.
+
+## [Flutter-tools.nvim](https://github.com/akinsho/flutter-tools.nvim)
+
+Build flutter and dart applications in neovim using the native LSP.
 
 ## [Mason](https://github.com/williamboman/mason.nvim)
 
@@ -85,7 +99,7 @@ A completion engine plugin for neovim written in Lua.
 | n    | `<C-b>`     | Scroll backward |
 | n    | `<C-Space>` | Complete        |
 | n    | `<C-e>`     | Abort           |
-| n    | `<CR>`      | Confirm         |
+| n    | `<C-Y>`     | Confirm         |
 
 ## [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
@@ -168,7 +182,7 @@ A blazing fast and easy to configure Neovim statusline written in Lua.
 
 ## [Catppuccin](https://github.com/catppuccin/nvim)
 
-This port of Catppuccin is special because it was the first one and the one that originated the project itself. Given this, it's important to acknowledge that it all didn't come to be what it is now out of nowhere. So, if you are interested in knowing more about the initial stages of the theme, you can find it under the v0.1 tag
+Catppuccin theme for nvim
 
 ## [Lazygit](https://github.com/kdheepak/lazygit.nvim)
 
