@@ -66,7 +66,7 @@ vim.keymap.set(
 	"n",
 	"<leader>r",
 	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-	{ desc = "Search word under the cursor" }
+	{ desc = "Replace word under the cursor" }
 )
 
 vim.keymap.set("n", "<leader>ct", function()
