@@ -209,10 +209,6 @@ Easy comments
 | n    | `gcc`  | Comment current line |
 | v    | `gc`   | Comment selection    |
 
-## [mini.pairs](https://github.com/echasnovski/mini.pairs)
-
-Autopair plugin (like "", '', (), {} etc...)
-
 ## [mini.ai](https://github.com/echasnovski/mini.ai)
 
 It enhances some builtin textobjects, creates new ones, and allows user to create their own (like based on treesitter, and more).
