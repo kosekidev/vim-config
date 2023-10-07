@@ -61,6 +61,14 @@ Lightweight yet powerful formatter plugin for Neovim
 
 An asynchronous linter plugin for Neovim (>= 0.6.0) complementary to the built-in Language Server Protocol support.
 
+## [build_script](https://github.com/KosekiDev/build_script)
+
+Open a quicklist with project's build script to run.
+
+| Mode | Keymap       | Description                                                               |
+| ---- | ------------ | ------------------------------------------------------------------------- |
+| n    | `<leader>bs` | Open build script quicklist then run choosen command in a new tmux window |
+
 ## [Flutter-tools.nvim](https://github.com/akinsho/flutter-tools.nvim)
 
 Build flutter and dart applications in neovim using the native LSP.
