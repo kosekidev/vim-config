@@ -33,7 +33,26 @@ return {
 				"vimdoc",
 				"bash",
 			},
+			incremental_selection = {
+				enable = true,
+				keymaps = {
+					init_selection = "<C-space>",
+					node_incremental = "<C-space>",
+					scope_incremental = false,
+					node_decremental = "<bs>",
+				},
+			},
 			textobjects = {
+				select = {
+					enable = true,
+					lookahead = true,
+					keymaps = {
+						["a="] = { query = "@assignment.outer", desc = "Select outer part of an assignment" },
+						["i="] = { query = "@assignment.inner", desc = "Select inner part of an assignment" },
+						["l="] = { query = "@assignment.lhs", desc = "Select left hand side of an assignment" },
+						["r="] = { query = "@assignment.rhs", desc = "Select right hand side of an assignment" },
+					},
+				},
 				move = {
 					enable = true,
 					set_jumps = true, -- whether to set jumps in the jumplist
@@ -53,17 +72,6 @@ return {
 			},
 		},
 		config = function(_, opts)
-			if type(opts.ensure_installed) == "table" then
-				---@type table<string, boolean>
-				local added = {}
-				opts.ensure_installed = vim.tbl_filter(function(lang)
-					if added[lang] then
-						return false
-					end
-					added[lang] = true
-					return true
-				end, opts.ensure_installed)
-			end
 			require("nvim-treesitter.configs").setup(opts)
 		end,
 	},
