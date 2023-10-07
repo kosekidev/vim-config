@@ -14,8 +14,9 @@ After installation, do :checkhealth to check if you have all required dependenci
 | n    | `<leader>Y`  | Yank from cursor to the end of the line in system clipboard       |
 | n, v | `<leader>d`  | Delete the selection/object in the black hole register            |
 | x    | `<leader>p`  | Delete the selection/object in the black hole register then paste |
+| n    | `<leader>r`  | Replace word under the cursor                                     |
 | n    | `<leader>ct` | Toggle dark/light theme                                           |
-| v    | `Y`          | Yank from cursor to end of line                                   |
+| n    | `Y`          | Yank from cursor to end of line                                   |
 | v    | `J`          | Move selection down                                               |
 | v    | `K`          | Move selection up                                                 |
 | n    | `<C-H>`      | Move cursor to the left window / tmux window                      |
@@ -55,10 +56,6 @@ Configs for the Nvim LSP Client
 ## [Conform.nvim](https://github.com/stevearc/conform.nvim)
 
 Lightweight yet powerful formatter plugin for Neovim
-
-## [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
-
-Super fast git decorations implemented purely in Lua.
 
 ## [Nvim-lint](https://github.com/mfussenegger/nvim-lint)
 
@@ -141,9 +138,10 @@ Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the late
 
 telescope-file-browser.nvim is a file browser extension for telescope.nvim. It supports synchronized creation, deletion, renaming, and moving of files and folders powered by telescope.nvim and plenary.nvim.
 
-| Mode | Key         | Description       |
-| ---- | ----------- | ----------------- |
-| n    | `<leader>e` | Open file browser |
+| Mode | Key         | Description                          |
+| ---- | ----------- | ------------------------------------ |
+| n    | `<leader>e` | Open file browser                    |
+| n    | `<leader>E` | Open file browser (ignore gitignore) |
 
 | Mode | Key      | Description        |
 | ---- | -------- | ------------------ |
@@ -188,9 +186,13 @@ Catppuccin theme for nvim
 
 Plugin for calling lazygit from within neovim.
 
-| Mode | Keymap       | Description        |
-| ---- | ------------ | ------------------ |
-| n    | `<leader>gs` | Open Mason manager |
+| Mode | Keymap       | Description |
+| ---- | ------------ | ----------- |
+| n    | `<leader>gs` | Open Laygit |
+
+## [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+
+Super fast git decorations implemented purely in Lua.
 
 ## [undotree](https://github.com/mbbill/undotree)
 
