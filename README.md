@@ -90,10 +90,6 @@ Lua snippets plugin
 
 Snippets collection for a set of different programming languages.
 
-## [guard](https://github.com/nvimdev/guard.nvim)
-
-Async formatting and linting utility for neovim.
-
 ## [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
 A completion engine plugin for neovim written in Lua.
