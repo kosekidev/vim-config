@@ -6,6 +6,15 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 
 After installation, do :checkhealth to check if you have all required dependencies.
 
+![image](https://github.com/KosekiDev/vim_config/assets/62622114/7b54f0b4-fa68-40f3-80a4-8564d00d2bd3)
+
+![image](https://github.com/KosekiDev/vim_config/assets/62622114/6ee85eb1-7064-468f-a868-62d3c9f58a71)
+
+![image](https://github.com/KosekiDev/vim_config/assets/62622114/2d783573-cf52-4f21-a322-46d770314622)
+
+![image](https://github.com/KosekiDev/vim_config/assets/62622114/bfbfe4a7-da15-4300-a930-4b75119fd92f)
+
+
 ## Util. keymaps
 
 | Mode | Keymap       | Description                                                       |
