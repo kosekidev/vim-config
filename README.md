@@ -14,7 +14,6 @@ After installation, do :checkhealth to check if you have all required dependenci
 
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/bfbfe4a7-da15-4300-a930-4b75119fd92f)
 
-
 ## Util. keymaps
 
 | Mode | Keymap       | Description                                                       |
@@ -65,10 +64,6 @@ Configs for the Nvim LSP Client
 ## [Conform.nvim](https://github.com/stevearc/conform.nvim)
 
 Lightweight yet powerful formatter plugin for Neovim
-
-## [Nvim-lint](https://github.com/mfussenegger/nvim-lint)
-
-An asynchronous linter plugin for Neovim (>= 0.6.0) complementary to the built-in Language Server Protocol support.
 
 ## [build_script](https://github.com/KosekiDev/build_script)
 
