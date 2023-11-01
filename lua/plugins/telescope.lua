@@ -10,15 +10,6 @@ return {
 			winblend = 0,
 		},
 	},
-	extensions = {
-		file_browser = {
-			theme = "catppuccin",
-			hijack_netrw = true,
-		},
-	},
-	init = function()
-		require("telescope").load_extension("file_browser")
-	end,
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find Files" },
 		{ "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Grep files" },
