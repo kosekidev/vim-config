@@ -54,7 +54,7 @@ vim.keymap.set("x", "<leader>p", '"_dP', {
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', {
 	desc = "Yank the line in the system clipboard",
 })
-vim.keymap.set("n", "<leader>Y", '"+Y', {
+vim.keymap.set("n", "<leader>Y", '"+yg$', {
 	desc = "Yank from the cursor to the end of the line in the system clipboard",
 })
 
