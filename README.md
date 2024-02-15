@@ -73,6 +73,17 @@ Open a quicklist with project's build script to run.
 | ---- | ------------ | ------------------------------------------------------------------------- |
 | n    | `<leader>bs` | Open build script quicklist then run choosen command in a new tmux window |
 
+## [Harpoon](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)
+
+Getting you where you want with the fewest keystrokes.
+
+| Mode | Keymap       | Description                       |
+| ---- | ------------ | --------------------------------- |
+| n    | `<leader>ha` | Add current file to Harpoon list  |
+| n    | `<leader>ho` | Open Harpoon quick menu           |
+| n    | `<leader>hn` | Navigate to the next harpoon file |
+| n    | `<leader>hp` | Navigate to the prev harpoon file |
+
 ## [Flutter-tools.nvim](https://github.com/akinsho/flutter-tools.nvim)
 
 Build flutter and dart applications in neovim using the native LSP.
