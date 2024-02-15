@@ -79,10 +79,10 @@ Getting you where you want with the fewest keystrokes.
 
 | Mode | Keymap       | Description                       |
 | ---- | ------------ | --------------------------------- |
-| n    | `<leader>ha` | Add current file to Harpoon list  |
+| n    | `<C-A>`      | Add current file to Harpoon list  |
 | n    | `<leader>ho` | Open Harpoon quick menu           |
-| n    | `<leader>hn` | Navigate to the next harpoon file |
-| n    | `<leader>hp` | Navigate to the prev harpoon file |
+| n    | `<C-N>`      | Navigate to the next harpoon file |
+| n    | `<C-P>`      | Navigate to the prev harpoon file |
 
 ## [Flutter-tools.nvim](https://github.com/akinsho/flutter-tools.nvim)
 
