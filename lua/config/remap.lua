@@ -82,21 +82,3 @@ end, {
 vim.keymap.set("n", "<C-S>", "<cmd>silent !tmux neww<CR>", {
 	desc = "Open new tmux window",
 })
-
--- Harpoon keymaps
-
-vim.keymap.set("n", "<leader>ha", '<cmd>lua require("harpoon.mark").add_file()<CR>', {
-	desc = "Add current file to Harpoon list",
-})
-
-vim.keymap.set("n", "<leader>ho", '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>', {
-	desc = "Open Harpoon quick menu",
-})
-
-vim.keymap.set("n", "<leader>hn", '<cmd>lua require("harpoon.ui").nav_next()<CR>', {
-	desc = "Navigate to the next harpoon file",
-})
-
-vim.keymap.set("n", "<leader>hp", '<cmd>lua require("harpoon.ui").nav_prev()<CR>', {
-	desc = "Navigate to the prev harpoon file",
-})
