@@ -79,7 +79,7 @@ Getting you where you want with the fewest keystrokes.
 
 | Mode | Keymap       | Description                       |
 | ---- | ------------ | --------------------------------- |
-| n    | `<C-A>`      | Add current file to Harpoon list  |
+| n    | `<leader>ha` | Add current file to Harpoon list  |
 | n    | `<leader>ho` | Open Harpoon quick menu           |
 | n    | `<C-N>`      | Navigate to the next harpoon file |
 | n    | `<C-P>`      | Navigate to the prev harpoon file |
@@ -284,7 +284,7 @@ If you've ever tried using the . command after a plugin map, you were likely dis
 
 ## [vim-surround](https://github.com/tpope/vim-surround)
 
-Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more. The plugin provides mappings to easily delete, change and add such surroundings in pairs.
+Surround.vim is all about "~": parentheses, brackets, quotes, XML tags, and more. The plugin provides mappings to easily delete, change and add such surroundings in pairs.
 
 ## [dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
