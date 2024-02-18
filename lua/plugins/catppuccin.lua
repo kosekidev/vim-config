@@ -5,7 +5,6 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			no_italic = true,
-			transparent_background = true,
 			integrations = {
 				cmp = true,
 				telescope = true,
