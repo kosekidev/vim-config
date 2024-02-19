@@ -197,9 +197,9 @@ telescope-file-browser.nvim is a file browser extension for telescope.nvim. It s
 
 A blazing fast and easy to configure Neovim statusline written in Lua.
 
-## [Catppuccin](https://github.com/catppuccin/nvim)
+## [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
 
-Catppuccin theme for nvim
+VSCode theme for nvim
 
 ## [Lazygit](https://github.com/kdheepak/lazygit.nvim)
 
