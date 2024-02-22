@@ -79,6 +79,6 @@ end, {
 	desc = "Toggle dark/light mode",
 })
 
-vim.keymap.set("n", "<C-W>", "<cmd>silent !tmux neww<CR>", {
+vim.keymap.set("n", "<leader>w", "<cmd>silent !tmux neww<CR>", {
 	desc = "Open new tmux window",
 })
