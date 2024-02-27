@@ -5,7 +5,7 @@ return {
 	},
 	opts = {
 		executor_callback = function(command)
-			local tmux_cmd = 'silent !tmux neww "' .. command .. '"'
+			local tmux_cmd = 'silent !tmux neww "' .. command .. '; exec zsh"'
 			vim.cmd(tmux_cmd)
 		end,
 	},
