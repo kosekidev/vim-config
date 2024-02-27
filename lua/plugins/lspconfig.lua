@@ -16,6 +16,7 @@ return {
 		lspconfig.jsonls.setup({})
 		lspconfig.html.setup({})
 		lspconfig.cssls.setup({})
+		lspconfig.rust_analyzer.setup({})
 
 		vim.keymap.set("n", "<space>vd", vim.diagnostic.open_float, { desc = "Open float inline diagnostic" })
 		vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
