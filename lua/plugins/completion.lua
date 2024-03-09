@@ -10,6 +10,7 @@ return {
 						require("luasnip.loaders.from_vscode").lazy_load()
 						require("luasnip").filetype_extend("javascript", { "jsdoc" })
 						require("luasnip").filetype_extend("frameworks", { "vue" })
+						require("luasnip").filetype_extend("lua", { "luadoc" })
 					end,
 				},
 				build = "make install_jsregexp",
