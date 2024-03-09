@@ -18,7 +18,6 @@ return {
 			{ "hrsh7th/cmp-buffer" },
 			{ "hrsh7th/cmp-nvim-lsp" },
 			{ "saadparwaiz1/cmp_luasnip" },
-			{ "rafamadriz/friendly-snippets" },
 		},
 		config = function()
 			local cmp = require("cmp")
