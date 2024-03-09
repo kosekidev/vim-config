@@ -4,11 +4,13 @@ return {
 		dependencies = {
 			{
 				"L3MON4D3/LuaSnip",
-				dependencies = { "rafamadriz/friendly-snippets" },
+				dependencies = {
+					"rafamadriz/friendly-snippets",
+					init = function()
+						require("luasnip.loaders.from_vscode").lazy_load()
+					end,
+				},
 				build = "make install_jsregexp",
-				config = function()
-					require("luasnip.loaders.from_vscode").lazy_load()
-				end,
 			},
 			{ "hrsh7th/cmp-path" },
 			{ "hrsh7th/cmp-buffer" },
@@ -44,6 +46,7 @@ return {
 					}),
 				}),
 				sources = cmp.config.sources({
+					{ name = "luasnip" },
 					{ name = "nvim_lsp" },
 					{ name = "buffer" },
 				}),
