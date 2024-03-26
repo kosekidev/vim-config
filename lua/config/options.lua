@@ -17,8 +17,8 @@ vim.opt.backup = false
 vim.opt.undofile = true
 vim.opt.updatetime = 150
 
-vim.opt.undodir = os.getenv((vim.loop.os_uname().sysname == "Windows_NT") and "UserProfile" or "HOME") .. "/.vim/undodir"
-vim.opt.wildignore:append { "*/node_modules/*" }
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.wildignore:append({ "*/node_modules/*" })
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
@@ -26,7 +26,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.wrap = false
-vim.opt.fillchars = { eob = ' ' }
+vim.opt.fillchars = { eob = " " }
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
