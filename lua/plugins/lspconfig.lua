@@ -15,6 +15,7 @@ return {
 		lspconfig.jsonls.setup({})
 		lspconfig.html.setup({})
 		lspconfig.cssls.setup({})
+		lspconfig.eslint.setup({})
 		lspconfig.rust_analyzer.setup({})
 		lspconfig.tsserver.setup({
 			init_options = {
