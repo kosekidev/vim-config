@@ -52,7 +52,7 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<space>vd", vim.diagnostic.open_float, { desc = "Open float inline diagnostic" })
+		vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, { desc = "Open float inline diagnostic" })
 		vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
 		vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diognostic" })
 		vim.keymap.set("n", "[w", function()
