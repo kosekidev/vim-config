@@ -169,7 +169,6 @@ return {
 						},
 						{
 							type = "pwa-chrome",
-							host = "127.0.0.1",
 							request = "attach",
 							name = "Attach Program (pwa-chrome, select port)",
 							program = "${file}",
