@@ -65,21 +65,6 @@ return {
 				virt_text_win_col = nil,
 			})
 
-			if not dap.adapters["pwa-chrome"] then
-				dap.adapters["pwa-chrome"] = {
-					type = "server",
-					host = "localhost",
-					port = "9229",
-					executable = {
-						command = "node",
-						args = {
-							os.getenv("HOME") .. "/.dap-nvim/js-debug-adapter",
-							"9229",
-						},
-					},
-				}
-			end
-
 			require("dap-vscode-js").setup({
 				node_path = "node",
 				debugger_path = os.getenv("HOME") .. "/.dap-nvim/js-debug-adapter",
@@ -119,7 +104,7 @@ return {
 							request = "launch",
 							name = "Launch Chrome",
 							url = function()
-								return "http://localhost:" .. (vim.fn.input("Select client port: ", 5176))
+								return "http://localhost:" .. (vim.fn.input("Select client port: ", 5173))
 							end,
 							webRoot = "${workspaceFolder}",
 							sourceMaps = true,
