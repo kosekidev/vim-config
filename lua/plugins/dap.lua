@@ -4,46 +4,12 @@ return {
 		dependencies = {
 			{
 				"rcarriga/nvim-dap-ui",
-				dependencies = { "nvim-neotest/nvim-nio" },
-				keys = {
-					{
-						"<leader>du",
-						function()
-							require("dapui").toggle({})
-						end,
-						desc = "Dap UI",
-					},
-					{
-						"<leader>de",
-						function()
-							require("dapui").eval()
-						end,
-						desc = "Eval",
-						mode = { "n", "v" },
-					},
-				},
-				opts = {},
-				config = function(_, opts)
-					local dap = require("dap")
-					local dapui = require("dapui")
-					dapui.setup(opts)
-
-					dap.listeners.after.event_initialized["dapui_config"] = function()
-						dapui.open({})
-					end
-					dap.listeners.before.event_terminated["dapui_config"] = function()
-						dapui.close({})
-					end
-					dap.listeners.before.event_exited["dapui_config"] = function()
-						dapui.close({})
-					end
-				end,
 			},
 			{
 				"theHamsta/nvim-dap-virtual-text",
 				opts = {},
 			},
-			{ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } },
+			{ "mxsdev/nvim-dap-vscode-js" },
 		},
 
   -- stylua: ignore
@@ -86,6 +52,23 @@ return {
 			end
 
 			local dap = require("dap")
+			local dap_virtual_text = require("nvim-dap-virtual-text")
+
+			dap_virtual_text.setup({
+				enabled = true,
+				enabled_commands = true,
+				highlight_changed_variables = true,
+				highlight_new_as_changed = false,
+				show_stop_reason = true,
+				commented = false,
+				only_first_definition = true,
+				all_references = false,
+				filter_references_pattern = "<module",
+				virt_text_pos = "eol",
+				all_frames = false,
+				virt_lines = false,
+				virt_text_win_col = nil,
+			})
 
 			require("dap-vscode-js").setup({
 				node_path = "node",
@@ -170,7 +153,8 @@ return {
 			local dapui = require("dapui")
 			dapui.setup(opts)
 			dap.listeners.after.event_initialized["dapui_config"] = function()
-				dapui.open({})
+				vim.cmd("tabfirst|tabnext")
+				dapui.open()
 			end
 			dap.listeners.before.event_terminated["dapui_config"] = function()
 				dapui.close({})
