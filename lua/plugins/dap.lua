@@ -2,13 +2,8 @@ return {
 	{
 		"mfussenegger/nvim-dap",
 		dependencies = {
-			{
-				"rcarriga/nvim-dap-ui",
-			},
-			{
-				"theHamsta/nvim-dap-virtual-text",
-				opts = {},
-			},
+			{ "rcarriga/nvim-dap-ui" },
+			{ "theHamsta/nvim-dap-virtual-text", opts = {} },
 			{ "mxsdev/nvim-dap-vscode-js" },
 		},
 
@@ -70,6 +65,21 @@ return {
 				virt_text_win_col = nil,
 			})
 
+			if not dap.adapters["pwa-chrome"] then
+				dap.adapters["pwa-chrome"] = {
+					type = "server",
+					host = "localhost",
+					port = "9229",
+					executable = {
+						command = "node",
+						args = {
+							os.getenv("HOME") .. "/.dap-nvim/js-debug-adapter",
+							"9229",
+						},
+					},
+				}
+			end
+
 			require("dap-vscode-js").setup({
 				node_path = "node",
 				debugger_path = os.getenv("HOME") .. "/.dap-nvim/js-debug-adapter",
@@ -106,15 +116,13 @@ return {
 						},
 						{
 							type = "pwa-chrome",
-							request = "attach",
-							name = "Attach Program (pwa-chrome, select port)",
-							program = "${file}",
-							cwd = "${workspaceFolder}",
-							sourceMaps = true,
-							port = function()
-								return vim.fn.input("Select port: ", 9229)
+							request = "launch",
+							name = "Launch Chrome",
+							url = function()
+								return "http://localhost:" .. (vim.fn.input("Select client port: ", 5176))
 							end,
 							webRoot = "${workspaceFolder}",
+							sourceMaps = true,
 						},
 						{
 							type = "pwa-node",
@@ -151,7 +159,9 @@ return {
 		config = function(_, opts)
 			local dap = require("dap")
 			local dapui = require("dapui")
+
 			dapui.setup(opts)
+
 			dap.listeners.after.event_initialized["dapui_config"] = function()
 				vim.cmd("tabfirst|tabnext")
 				dapui.open()
