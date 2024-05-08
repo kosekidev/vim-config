@@ -164,12 +164,10 @@ telescope-file-browser.nvim is a file browser extension for telescope.nvim. It s
 
 | Mode | Key      | Description        |
 | ---- | -------- | ------------------ |
-| i    | `<A-c>`  | Create             |
-| i    | `<S-CR>` | Create_from_prompt |
-| i    | `<A-r>`  | Rename             |
-| i    | `<A-m>`  | Move               |
-| i    | `<A-y>`  | Copy               |
-| i    | `<A-d>`  | Remove             |
+| i    | `<C-c>`  | Create             |
+| i    | `<C-r>`  | Rename             |
+| i    | `<C-m>`  | Move               |
+| i    | `<C-x>`  | Remove             |
 | i    | `<C-o>`  | Open               |
 | i    | `<C-g>`  | Goto_parent_dir    |
 | i    | `<C-e>`  | Goto_home_dir      |
@@ -178,6 +176,8 @@ telescope-file-browser.nvim is a file browser extension for telescope.nvim. It s
 | i    | `<C-f>`  | Toggle_browser     |
 | i    | `<C-h>`  | Toggle_hidden      |
 | i    | `<C-s>`  | Toggle_all         |
+| i    | `<A-y>`  | Copy               |
+| i    | `<S-CR>` | Create_from_prompt |
 | i    | `<bs>`   | Backspace          |
 | n    | `c`      | Create             |
 | n    | `r`      | Rename             |
@@ -304,3 +304,24 @@ Todo-comments is a lua plugin for Neovim 0.5 to highlight and search for todo co
 ## [nvim-tmux-navigation](https://github.com/alexghergh/nvim-tmux-navigation)
 
 The plugin is a rewrite of Christoomey's Vim Tmux Navigator, with a few added benefits
+
+## [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+
+nvim-dap is a Debug Adapter Protocol client implementation for Neovim. nvim-dap allows you to:
+
+Launch an application to debug
+Attach to running applications and debug them
+Set breakpoints and step through code
+Inspect the state of the application
+
+## [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+
+A UI for nvim-dap which provides a good out of the box configuration.
+
+## [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text)
+
+This plugin adds virtual text support to nvim-dap. nvim-treesitter is used to find variable definitions.
+
+## [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js)
+
+nvim-dap adapter for vscode-js-debug.
