@@ -4,15 +4,15 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 
-			html = { { "prettierd", "prettier" } },
-			css = { { "prettierd", "prettier" } },
-			json = { { "prettierd", "prettier" } },
-			markdown = { { "prettierd", "prettier" } },
+			html = { "prettier" },
+			css = { "prettier" },
+			json = { "prettier" },
+			markdown = { "prettier" },
 
-			javascript = { { "prettierd", "prettier" } },
-			javascriptreact = { { "prettierd", "prettier" } },
-			typescript = { { "prettierd", "prettier" } },
-			typescriptreact = { { "prettierd", "prettier" } },
+			javascript = { "prettier" },
+			javascriptreact = { "prettier" },
+			typescript = { "prettier" },
+			typescriptreact = { "prettier" },
 		},
 		format_on_save = {
 			lsp_fallback = true,
