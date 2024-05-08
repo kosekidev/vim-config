@@ -318,6 +318,25 @@ Inspect the state of the application
 
 A UI for nvim-dap which provides a good out of the box configuration.
 
+| Mode | Keymap       | Description             |
+| ---- | ------------ | ----------------------- |
+| n    | `<leader>dB` | Breakpoint condition    |
+| n    | `<leader>db` | Toggle breakpoint       |
+| n    | `<leader>dc` | Continue                |
+| n    | `<leader>dC` | Run to Cursor           |
+| n    | `<leader>dg` | Go to line (No execute) |
+| n    | `<leader>di` | Step into               |
+| n    | `<leader>dj` | Down                    |
+| n    | `<leader>dk` | Up                      |
+| n    | `<leader>dl` | Run last                |
+| n    | `<leader>do` | Step out                |
+| n    | `<leader>dO` | Step over               |
+| n    | `<leader>dp` | Pause                   |
+| n    | `<leader>dr` | Toggle REPL             |
+| n    | `<leader>ds` | Session                 |
+| n    | `<leader>dt` | Terminate               |
+| n    | `<leader>dw` | Widgets                 |
+
 ## [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text)
 
 This plugin adds virtual text support to nvim-dap. nvim-treesitter is used to find variable definitions.
