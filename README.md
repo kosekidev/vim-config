@@ -10,6 +10,8 @@ After installation, do :checkhealth to check if you have all required dependenci
 
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/e29aecf2-9f4a-46e7-9c42-6eefc6bf5357)
 
+![image](https://github.com/KosekiDev/vim_config/assets/62622114/1d2dc141-62e5-4203-a46e-f169035aefab)
+
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/b228b64a-9e53-429c-872b-8547cc3d69d4)
 
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/de47d355-b6e8-4977-b653-1ddd53ada4a9)
