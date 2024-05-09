@@ -4,8 +4,6 @@ Simple NVim config using lazy.vim as package manager.
 
 You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 
-After installation, do :checkhealth to check if you have all required dependencies.
-
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/39d301ec-9402-4b55-b300-1c797a075480)
 
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/e29aecf2-9f4a-46e7-9c42-6eefc6bf5357)
@@ -15,6 +13,18 @@ After installation, do :checkhealth to check if you have all required dependenci
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/b228b64a-9e53-429c-872b-8547cc3d69d4)
 
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/de47d355-b6e8-4977-b653-1ddd53ada4a9)
+
+## Dependencies
+
+This configuration use [Lazygit](https://github.com/jesseduffield/lazygit), you need to install it.
+
+Treesitter required to install some things, you can go to the [git repository](https://github.com/nvim-treesitter/nvim-treesitter) to check what need to be installed.
+
+For telescope plugin, we also need to install [fd](https://github.com/sharkdp/fd), [rg](https://github.com/BurntSushi/ripgrep) and [fzf](https://github.com/nvim-telescope/telescope-fzf-native.nvim).
+
+I also use Tmux a lot, so some parts of this configuration use it.
+
+After that, do :checkhealth to check if you have all required dependencies.
 
 ## Util. keymaps
 
