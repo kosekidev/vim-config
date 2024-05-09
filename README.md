@@ -22,7 +22,7 @@ Treesitter required to install some things, you can go to the [git repository](h
 
 For telescope plugin, we also need to install [fd](https://github.com/sharkdp/fd), [rg](https://github.com/BurntSushi/ripgrep) and [fzf](https://github.com/nvim-telescope/telescope-fzf-native.nvim).
 
-I also use Tmux a lot, so some parts of this configuration use it.
+I also use Tmux a lot, so some parts of this configuration use it. You can find my Tmux config [here](https://github.com/KosekiDev/TmuxConfig).
 
 After that, do :checkhealth to check if you have all required dependencies.
 
