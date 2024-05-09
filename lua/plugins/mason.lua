@@ -17,11 +17,8 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
-					"stylua",
 					"rust_analyzer",
 					"tsserver",
-					"js-debug-adapter",
-					"prettier",
 					"eslint",
 					"html",
 					"cssls",
