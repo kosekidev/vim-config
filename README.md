@@ -356,3 +356,11 @@ This plugin adds virtual text support to nvim-dap. nvim-treesitter is used to fi
 ## [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js)
 
 nvim-dap adapter for vscode-js-debug.
+
+To install it, you can run the following commands(mac and linux) :
+
+git clone https://github.com/microsoft/vscode-js-debug ~/.dap-nvim/js-debug-adapter
+cd ~/.dap-nvim/js-debug-adapter
+npm install --legacy-peer-deps
+npx gulp vsDebugServerBundle
+mv dist out
