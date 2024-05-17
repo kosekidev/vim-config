@@ -82,3 +82,7 @@ end, {
 vim.keymap.set("n", "<leader>w", "<cmd>silent !tmux neww<CR>", {
 	desc = "Open new tmux window",
 })
+
+vim.keymap.set("n", "<C-F>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", {
+	desc = "Open tmux-sessionizer tool",
+})
