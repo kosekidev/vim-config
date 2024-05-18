@@ -22,10 +22,10 @@ vim.keymap.set("n", "<C-J>", "<cmd>NvimTmuxNavigateDown<CR>", { silent = true, d
 vim.keymap.set("n", "<C-K>", "<cmd>NvimTmuxNavigateUp<CR>", { silent = true, desc = "Go to top window" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {
-	desc = "Move selected line up",
+	desc = "Move selected line down",
 })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {
-	desc = "Move selected line down",
+	desc = "Move selected line up",
 })
 
 vim.keymap.set("n", "Y", "yg$", {
