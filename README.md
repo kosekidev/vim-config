@@ -178,7 +178,6 @@ telescope-file-browser.nvim is a file browser extension for telescope.nvim. It s
 | ---- | -------- | ------------------ |
 | i    | `<C-c>`  | Create             |
 | i    | `<C-r>`  | Rename             |
-| i    | `<C-m>`  | Move               |
 | i    | `<C-x>`  | Remove             |
 | i    | `<C-o>`  | Open               |
 | i    | `<C-g>`  | Goto_parent_dir    |
