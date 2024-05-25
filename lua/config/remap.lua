@@ -21,6 +21,9 @@ vim.keymap.set("n", "<C-L>", "<cmd>NvimTmuxNavigateRight<CR>", { silent = true, 
 vim.keymap.set("n", "<C-J>", "<cmd>NvimTmuxNavigateDown<CR>", { silent = true, desc = "Go to bottom window" })
 vim.keymap.set("n", "<C-K>", "<cmd>NvimTmuxNavigateUp<CR>", { silent = true, desc = "Go to top window" })
 
+vim.keymap.set("n", "<C-S>", "<C-W>5<", { silent = true, desc = "Reduce pane width" })
+vim.keymap.set("n", "<C-_>", "<C-W>5>", { silent = true, desc = "Increase pane width" })
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {
 	desc = "Move selected line down",
 })
