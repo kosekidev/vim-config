@@ -43,7 +43,9 @@ After that, do :checkhealth to check if you have all required dependencies.
 | n    | `<C-L>`      | Move cursor to the right window / tmux window                     |
 | n    | `<C-J>`      | Move cursor to the bottom window / tmux window                    |
 | n    | `<C-K>`      | Move cursor to the top window / tmux window                       |
-| n    | `<C-S>`      | Open new cwd tmux session                                         |
+| n    | `<C-S>`      | Reduce pane width                                                 |
+| n    | `<C-_>`      | Increase pane width                                               |
+| n    | `<leader>w`  | Open new cwd tmux window                                          |
 
 ## [lazy.vim](https://github.com/folke/lazy.nvim)
 
