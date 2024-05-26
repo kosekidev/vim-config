@@ -333,9 +333,9 @@ A UI for nvim-dap which provides a good out of the box configuration.
 
 | Mode | Keymap       | Description             |
 | ---- | ------------ | ----------------------- |
-| n    | `<leader>dB` | Breakpoint condition    |
-| n    | `<leader>db` | Toggle breakpoint       |
-| n    | `<leader>dc` | Continue                |
+| n    | `<F1>`       | Breakpoint condition    |
+| n    | `<F2>`       | Toggle breakpoint       |
+| n    | `<F3>`       | Continue                |
 | n    | `<leader>dC` | Run to Cursor           |
 | n    | `<leader>dg` | Go to line (No execute) |
 | n    | `<leader>di` | Step into               |
@@ -344,10 +344,10 @@ A UI for nvim-dap which provides a good out of the box configuration.
 | n    | `<leader>dl` | Run last                |
 | n    | `<leader>do` | Step out                |
 | n    | `<leader>dO` | Step over               |
-| n    | `<leader>dp` | Pause                   |
+| n    | `<F4>`       | Pause                   |
 | n    | `<leader>dr` | Toggle REPL             |
 | n    | `<leader>ds` | Session                 |
-| n    | `<leader>dt` | Terminate               |
+| n    | `<F5>`       | Terminate               |
 | n    | `<leader>dw` | Widgets                 |
 
 ## [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text)
