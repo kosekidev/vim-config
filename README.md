@@ -14,6 +14,8 @@ You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
 
 ![image](https://github.com/KosekiDev/vim_config/assets/62622114/de47d355-b6e8-4977-b653-1ddd53ada4a9)
 
+This configuration is based on my Voyager keyboard config, so I recommend you to change remaps like you want (see my voyager config here: https://configure.zsa.io/voyager/layouts/rz4R9/latest/0)
+
 ## Dependencies
 
 This configuration use [Lazygit](https://github.com/jesseduffield/lazygit), you need to install it.
