@@ -100,10 +100,6 @@ Getting you where you want with the fewest keystrokes.
 | n    | `<C-N>`      | Navigate to the next harpoon file |
 | n    | `<C-P>`      | Navigate to the prev harpoon file |
 
-## [Flutter-tools.nvim](https://github.com/akinsho/flutter-tools.nvim)
-
-Build flutter and dart applications in neovim using the native LSP.
-
 ## [Mason](https://github.com/williamboman/mason.nvim)
 
 Portable package manager for Neovim that runs everywhere Neovim runs.
