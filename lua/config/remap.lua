@@ -47,17 +47,21 @@ vim.keymap.set("n", "n", "nzzzv", {
 	desc = "Go to next iteration and center the view",
 })
 vim.keymap.set("n", "N", "Nzzzv", {
+	silent = true,
 	desc = "Go to previous iteration and center the view",
 })
 
 vim.keymap.set("x", "<leader>p", '"_dP', {
+	silent = true,
 	desc = "Delete selection in blackhole register and paste",
 })
 
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', {
+	silent = true,
 	desc = "Yank the line in the system clipboard",
 })
 vim.keymap.set("n", "<leader>Y", '"+yg$', {
+	silent = true,
 	desc = "Yank from the cursor to the end of the line in the system clipboard",
 })
 
