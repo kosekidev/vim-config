@@ -14,6 +14,7 @@ return {
 			},
 			sync_install = false,
 			ensure_installed = {
+				"rust",
 				"html",
 				"css",
 				"javascript",
