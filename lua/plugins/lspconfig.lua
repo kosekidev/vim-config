@@ -77,7 +77,6 @@ return {
 		end, { desc = "Go to next error" })
 
 		vim.api.nvim_create_autocmd("LspAttach", {
-			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
 				local build_opts = function(keymap_desc)
 					return { buffer = ev.buf, remap = false, desc = keymap_desc }
