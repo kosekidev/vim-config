@@ -232,15 +232,6 @@ Undotree visualizes the undo history and makes it easy to browse and switch betw
 | ---- | ----------- | ------------- |
 | n    | `<leader>u` | Open Undotree |
 
-## [mini.comment](https://github.com/echasnovski/mini.comment)
-
-Easy comments
-
-| Mode | Keymap | Description          |
-| ---- | ------ | -------------------- |
-| n    | `gcc`  | Comment current line |
-| v    | `gc`   | Comment selection    |
-
 ## [mini.ai](https://github.com/echasnovski/mini.ai)
 
 It enhances some builtin textobjects, creates new ones, and allows user to create their own (like based on treesitter, and more).
