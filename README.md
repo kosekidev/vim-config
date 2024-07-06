@@ -121,13 +121,13 @@ Snippets collection for a set of different programming languages.
 
 A completion engine plugin for neovim written in Lua.
 
-| Mode | Keymap      | Description     |
-| ---- | ----------- | --------------- |
-| n    | `<C-f>`     | Scroll forward  |
-| n    | `<C-b>`     | Scroll backward |
-| n    | `<C-Space>` | Complete        |
-| n    | `<C-e>`     | Abort           |
-| n    | `<C-Y>`     | Confirm         |
+| Mode | Keymap      | Description                   |
+| ---- | ----------- | ----------------------------- |
+| n    | `<C-f>`     | Scroll documentation forward  |
+| n    | `<C-b>`     | Scroll documentation backward |
+| n    | `<C-Space>` | Complete                      |
+| n    | `<C-e>`     | Abort                         |
+| n    | `<C-Y>`     | Confirm                       |
 
 ## [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
