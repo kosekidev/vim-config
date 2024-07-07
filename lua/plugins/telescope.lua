@@ -27,6 +27,7 @@ return {
 				},
 				extensions = {
 					file_browser = {
+						use_fd = true,
 						mappings = {
 							["i"] = {
 								["<C-r>"] = fb_actions.rename,
