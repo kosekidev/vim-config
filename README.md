@@ -307,6 +307,25 @@ Todo-comments is a lua plugin for Neovim 0.5 to highlight and search for todo co
 
 The plugin is a rewrite of Christoomey's Vim Tmux Navigator, with a few added benefits
 
+## [crates.nvim](https://github.com/Saecki/crates.nvim)
+
+A neovim plugin that helps managing crates.io dependencies.
+
+| Mode | Keymap       | Description                        |
+| ---- | ------------ | ---------------------------------- |
+| n    | `<leader>cv` | show crate's versions              |
+| n    | `<leader>cf` | show crate's features              |
+| n    | `<leader>cd` | show crate's dependencies          |
+| n    | `<leader>cU` | upgrade crate                      |
+| v    | `<leader>cU` | upgrade crates                     |
+| n    | `<leader>cx` | expand plain crate to inline table |
+| n    | `<leader>cX` | extract crate into table           |
+| n    | `<leader>cH` | open homepage                      |
+| n    | `<leader>cR` | open repository                    |
+| n    | `<leader>cD` | open documentation                 |
+| n    | `<leader>cC` | open crates.io                     |
+| n    | `<leader>cL` | open lib.rs                        |
+
 ## [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 
 nvim-dap is a Debug Adapter Protocol client implementation for Neovim. nvim-dap allows you to:
