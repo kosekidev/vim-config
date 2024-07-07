@@ -52,6 +52,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "buffer" },
 					{ name = "path" },
+					{ name = "crates" },
 				}),
 			})
 		end,
