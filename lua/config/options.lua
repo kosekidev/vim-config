@@ -3,8 +3,8 @@ vim.g.maplocalleader = " "
 
 vim.opt.foldcolumn = "auto"
 
-vim.o.relativenumber = true
-vim.o.number = true
+vim.opt.relativenumber = true
+vim.opt.number = true
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
