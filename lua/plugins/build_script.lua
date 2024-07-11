@@ -1,5 +1,5 @@
 return {
-	"KosekiDev/build_script",
+	"kosekidev/build_script",
 	keys = {
 		{ "<leader>bs", "<cmd>silent :OpenBuildScripts<CR>", { desc = "Open project's build script quicklist" } },
 		{
