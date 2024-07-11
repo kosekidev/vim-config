@@ -5,7 +5,7 @@ return {
 		{
 			"<leader>pbs",
 			function()
-				require("build-script").open_quicklist(function(command)
+				require("build_script").open_quicklist(function(command)
 					local tmux_cmd = 'silent !tmux split-window "' .. command .. '"'
 					vim.cmd(tmux_cmd)
 				end)
