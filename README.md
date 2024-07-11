@@ -174,35 +174,37 @@ telescope-file-browser.nvim is a file browser extension for telescope.nvim. It s
 | n    | `<leader>e` | Open file browser                    |
 | n    | `<leader>E` | Open file browser (ignore gitignore) |
 
-| Mode | Key      | Description        |
-| ---- | -------- | ------------------ |
-| i    | `<C-c>`  | Create             |
-| i    | `<C-r>`  | Rename             |
-| i    | `<C-x>`  | Remove             |
-| i    | `<C-o>`  | Open               |
-| i    | `<C-g>`  | Goto_parent_dir    |
-| i    | `<C-e>`  | Goto_home_dir      |
-| i    | `<C-w>`  | Goto_cwd           |
-| i    | `<C-t>`  | Change_cwd         |
-| i    | `<C-f>`  | Toggle_browser     |
-| i    | `<C-h>`  | Toggle_hidden      |
-| i    | `<C-s>`  | Toggle_all         |
-| i    | `<A-y>`  | Copy               |
-| i    | `<S-CR>` | Create_from_prompt |
-| i    | `<bs>`   | Backspace          |
-| n    | `c`      | Create             |
-| n    | `r`      | Rename             |
-| n    | `m`      | Move               |
-| n    | `y`      | Copy               |
-| n    | `d`      | Remove             |
-| n    | `o`      | Open               |
-| n    | `g`      | Goto_parent_dir    |
-| n    | `e`      | Goto_home_dir      |
-| n    | `w`      | Goto_cwd           |
-| n    | `t`      | Change_cwd         |
-| n    | `f`      | Toggle_browser     |
-| n    | `h`      | Toggle_hidden      |
-| n    | `s`      | Toggle_all         |
+| Mode | Key      | Description                |
+| ---- | -------- | -------------------------- |
+| i    | `<C-u>`  | Show keymaps (insert mode) |
+| i    | `<C-c>`  | Create                     |
+| i    | `<C-r>`  | Rename                     |
+| i    | `<C-x>`  | Remove                     |
+| i    | `<C-o>`  | Open                       |
+| i    | `<C-g>`  | Goto_parent_dir            |
+| i    | `<C-e>`  | Goto_home_dir              |
+| i    | `<C-w>`  | Goto_cwd                   |
+| i    | `<C-t>`  | Change_cwd                 |
+| i    | `<C-f>`  | Toggle_browser             |
+| i    | `<C-h>`  | Toggle_hidden              |
+| i    | `<C-s>`  | Toggle_all                 |
+| i    | `<A-y>`  | Copy                       |
+| i    | `<S-CR>` | Create_from_prompt         |
+| i    | `<bs>`   | Backspace                  |
+| n    | `?`      | Show keymaps (normal mode) |
+| n    | `c`      | Create                     |
+| n    | `r`      | Rename                     |
+| n    | `m`      | Move                       |
+| n    | `y`      | Copy                       |
+| n    | `d`      | Remove                     |
+| n    | `o`      | Open                       |
+| n    | `g`      | Goto_parent_dir            |
+| n    | `e`      | Goto_home_dir              |
+| n    | `w`      | Goto_cwd                   |
+| n    | `t`      | Change_cwd                 |
+| n    | `f`      | Toggle_browser             |
+| n    | `h`      | Toggle_hidden              |
+| n    | `s`      | Toggle_all                 |
 
 ## [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 
