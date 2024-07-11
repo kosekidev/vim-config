@@ -81,7 +81,7 @@ Configs for the Nvim LSP Client
 
 Lightweight yet powerful formatter plugin for Neovim
 
-## [build_script](https://github.com/KosekiDev/build_script)
+## [build-script](https://github.com/kosekidev/build-script)
 
 Open a quicklist with project's build script to run.
 
