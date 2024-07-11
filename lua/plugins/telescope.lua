@@ -15,6 +15,7 @@ return {
 		lazy = true,
 		config = function()
 			local telescope = require("telescope")
+			local action_generate = require("telescope.actions.generate")
 			local fb_actions = require("telescope._extensions.file_browser.actions")
 
 			telescope.setup({
@@ -24,6 +25,16 @@ return {
 					layout_config = { prompt_position = "top" },
 					sorting_strategy = "ascending",
 					winblend = 0,
+					mappings = {
+						i = {
+							["<C-u>"] = action_generate.which_key({
+								name_width = 20, -- typically leads to smaller floats
+								max_height = 0.5, -- increase potential maximum height
+								separator = " > ", -- change sep between mode, keybind, and name
+								close_with_action = false, -- do not close float on action
+							}),
+						},
+					},
 				},
 				extensions = {
 					file_browser = {
