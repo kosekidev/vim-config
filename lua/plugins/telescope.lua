@@ -27,7 +27,7 @@ return {
 					winblend = 0,
 					mappings = {
 						i = {
-							["<C-u>"] = action_generate.which_key({
+							["<C-y>"] = action_generate.which_key({
 								name_width = 20, -- typically leads to smaller floats
 								max_height = 0.5, -- increase potential maximum height
 								separator = " > ", -- change sep between mode, keybind, and name
