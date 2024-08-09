@@ -31,6 +31,10 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {
 	desc = "Move selected line up",
 })
 
+vim.keymap.set("n", "<leader>t", "vat<ESC>F<", {
+	desc = "Go to closing tag in html",
+})
+
 vim.keymap.set("n", "Y", "yg$", {
 	desc = "Yank from cursor position to the end of the line",
 })
