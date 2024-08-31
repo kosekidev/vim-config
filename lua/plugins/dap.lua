@@ -109,12 +109,6 @@ return {
 							webRoot = "${workspaceFolder}",
 							sourceMaps = true,
 						},
-						{
-							type = "pwa-node",
-							request = "attach",
-							name = "Attach",
-							cwd = "${workspaceFolder}",
-						},
 					}
 				end
 			end
