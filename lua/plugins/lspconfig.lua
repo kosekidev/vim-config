@@ -90,8 +90,8 @@ return {
 				vim.keymap.set("n", "gK", vim.lsp.buf.signature_help, build_opts("Signature help"))
 				vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, build_opts("Signature help"))
 				vim.keymap.set("n", "K", vim.lsp.buf.hover, build_opts("Hover"))
-				vim.keymap.set("n", "<space>cr", vim.lsp.buf.rename, build_opts("Rename"))
-				vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, build_opts("Code action"))
+				vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, build_opts("Rename"))
+				vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, build_opts("Code action"))
 			end,
 		})
 	end,
