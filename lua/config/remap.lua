@@ -41,6 +41,7 @@ vim.keymap.set("n", "Y", "yg$", {
 vim.keymap.set("n", "J", "mzJ`z", {
 	desc = "Joining lines",
 })
+
 vim.keymap.set("n", "<C-d>", "<C-d>zz", {
 	desc = "Jump cursor downwards in the buffer and center the view",
 })
@@ -53,6 +54,30 @@ vim.keymap.set("n", "n", "nzzzv", {
 vim.keymap.set("n", "N", "Nzzzv", {
 	silent = true,
 	desc = "Go to previous iteration and center the view",
+})
+vim.keymap.set("n", "]e", "]ezz", {
+	silent = true,
+	desc = "Go to next error and center the view",
+})
+vim.keymap.set("n", "[e", "[ezz", {
+	silent = true,
+	desc = "Go to previous error and center the view",
+})
+vim.keymap.set("n", "]w", "]dzz", {
+	silent = true,
+	desc = "Go to next warning and center the view",
+})
+vim.keymap.set("n", "[w", "[dzz", {
+	silent = true,
+	desc = "Go to previous warning and center the view",
+})
+vim.keymap.set("n", "]d", "]dzz", {
+	silent = true,
+	desc = "Go to next diagnostic and center the view",
+})
+vim.keymap.set("n", "[d", "[dzz", {
+	silent = true,
+	desc = "Go to previous diagnostic and center the view",
 })
 
 vim.keymap.set("x", "<leader>p", '"_dP', {
