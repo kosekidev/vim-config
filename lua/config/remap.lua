@@ -34,7 +34,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {
 vim.keymap.set("n", "<leader>t", "vat<ESC>F<", {
 	desc = "Go to closing tag in html",
 })
-vim.keymap.set("n", "<leader>cc", "f(v%oF.c", {
+vim.keymap.set("n", "<leader>cc", "f(v%oT.c", {
 	desc = "Change entire object call",
 })
 vim.keymap.set("n", "<leader>dc", "f(v%oF.d", {
