@@ -37,6 +37,9 @@ After that, do :checkhealth to check if you have all required dependencies.
 | n, v | `<leader>d`  | Delete the selection/object in the black hole register            |
 | x    | `<leader>p`  | Delete the selection/object in the black hole register then paste |
 | n    | `<leader>r`  | Replace word under the cursor                                     |
+| n    | `<leader>t`  | Go to closing tag in html                                         |
+| n    | `<leader>cc` | Change entire object call                                         |
+| n    | `<leader>dc` | Delete entire object call                                         |
 | n    | `<leader>ct` | Toggle dark/light theme                                           |
 | n    | `Y`          | Yank from cursor to end of line                                   |
 | v    | `J`          | Move selection down                                               |
