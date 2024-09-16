@@ -16,7 +16,6 @@ return {
 		lspconfig.html.setup({})
 		lspconfig.cssls.setup({})
 		lspconfig.eslint.setup({})
-		lspconfig.rust_analyzer.setup({})
 		lspconfig.ts_ls.setup({
 			init_options = {
 				plugins = {
