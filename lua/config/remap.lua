@@ -31,7 +31,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {
 	desc = "Move selected line up",
 })
 
-vim.keymap.set("n", "<leader>t", "vat<ESC>F<", {
+vim.keymap.set({ "n", "v" }, "<leader>t", "vat<ESC>F<", {
 	desc = "Go to closing tag in html",
 })
 vim.keymap.set("n", "<leader>cc", "f(v%oT.c", {
