@@ -44,3 +44,16 @@ vim.g.loaded_python3_provider = 0
 
 vim.g.undotree_DiffAutoOpen = 0
 vim.g.undotree_SetFocusWhenToggle = 1
+vim.g.rustaceanvim = {
+	server = {
+		capabilities = {
+			textDocument = {
+				completion = {
+					completionItem = {
+						snippetSupport = false,
+					},
+				},
+			},
+		},
+	},
+}
