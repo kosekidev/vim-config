@@ -128,3 +128,37 @@ vim.keymap.set("n", "<leader>w", "<cmd>silent !tmux neww<CR>", {
 vim.keymap.set("n", "<C-F>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", {
 	desc = "Open tmux-sessionizer tool",
 })
+
+-------------
+-- Neotest --
+-------------
+
+vim.keymap.set("n", "<leader>nr", function()
+	require("neotest").run.run()
+end, {
+	desc = "Run nearest test",
+})
+
+vim.keymap.set("n", "<leader>nf", function()
+	require("neotest").run.run(vim.fn.expand("%"))
+end, {
+	desc = "Run current file tests",
+})
+
+vim.keymap.set("n", "<leader>ns", function()
+	require("neotest").run.stop()
+end, {
+	desc = "Stop the nearest test",
+})
+
+vim.keymap.set("n", "<leader>na", function()
+	require("neotest").run.attach()
+end, {
+	desc = "Attach the nearest test",
+})
+
+vim.keymap.set("n", "<leader>no", function()
+	require("neotest").output.open({ enter = true })
+end, {
+	desc = "Open test output",
+})

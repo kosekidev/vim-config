@@ -12,7 +12,6 @@ return {
 			sync_install = false,
 			auto_install = true,
 			ensure_installed = {
-				"rust",
 				"html",
 				"css",
 				"javascript",

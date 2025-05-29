@@ -12,12 +12,10 @@ return {
 						require("luasnip").filetype_extend("javascript", { "jsdoc" })
 						require("luasnip").filetype_extend("frameworks", { "vue" })
 						require("luasnip").filetype_extend("lua", { "luadoc" })
-						require("luasnip").filetype_extend("rust", { "rust" })
 					end,
 				},
 				build = "make install_jsregexp",
 			},
-			{ "github/copilot.vim" },
 			{ "hrsh7th/cmp-path" },
 			{ "hrsh7th/cmp-buffer" },
 			{ "hrsh7th/cmp-nvim-lsp" },

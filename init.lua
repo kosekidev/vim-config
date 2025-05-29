@@ -14,3 +14,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ spec = { import = "plugins" }, rocks = { enabled = false } })
+require("neotest").setup({
+	adapters = {
+		require("rustaceanvim.neotest"),
+	},
+})

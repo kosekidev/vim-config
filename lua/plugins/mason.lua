@@ -18,13 +18,12 @@ return {
 				automatic_enable = false,
 				ensure_installed = {
 					"lua_ls",
-					"rust_analyzer",
 					"ts_ls",
 					"eslint",
 					"html",
 					"cssls",
 					"jsonls",
-					"volar",
+					"vue_ls",
 				},
 			})
 		end,

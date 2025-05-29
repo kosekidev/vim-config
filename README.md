@@ -380,3 +380,15 @@ npm install --legacy-peer-deps
 npx gulp vsDebugServerBundle
 mv dist out
 ```
+
+## [neotest](https://github.com/nvim-neotest/neotest)
+
+A plugin to run tests (Only configured for Rust here)
+
+| Mode | Keymap       | Description             |
+| ---- | ------------ | ----------------------- |
+| n    | `<leader>nr` | Run nearest test        |
+| n    | `<leader>nf` | Run current file tests  |
+| n    | `<leader>ns` | Stop the nearest test   |
+| n    | `<leader>na` | Attach the nearest test |
+| n    | `<leader>no` | Open test output        |

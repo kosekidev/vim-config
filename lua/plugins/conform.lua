@@ -9,8 +9,6 @@ return {
 			json = { "prettier" },
 			markdown = { "prettier" },
 
-			rust = { "rustfmt" },
-
 			javascript = { "prettier" },
 			javascriptreact = { "prettier" },
 			typescript = { "prettier" },
