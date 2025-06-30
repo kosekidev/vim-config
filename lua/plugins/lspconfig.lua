@@ -1,55 +1,7 @@
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
-		local lspconfig = require("lspconfig")
-
-		lspconfig.lua_ls.setup({
-			settings = {
-				Lua = {
-					diagnostics = {
-						globals = { "vim" },
-					},
-				},
-			},
-		})
-		lspconfig.jsonls.setup({})
-		lspconfig.html.setup({})
-		lspconfig.cssls.setup({})
-		lspconfig.eslint.setup({})
-		lspconfig.ts_ls.setup({
-			init_options = {
-				plugins = {
-					{
-						name = "@vue/typescript-plugin",
-						location = vim.fn.stdpath("data")
-							.. "/mason/packages/vue-language-server/node_modules/@vue/language-server/node_modules/@vue/typescript-plugin",
-						languages = { "typescript", "javascript", "vue" },
-					},
-				},
-			},
-			filetypes = {
-				"vue",
-				"javascript",
-				"javascript.jsx",
-				"typescript",
-				"typescript.tsx",
-				"javascriptreact",
-				"typescriptreact",
-				"json",
-			},
-		})
-		lspconfig.volar.setup({
-			filetypes = {
-				"vue",
-				"javascript",
-				"javascript.jsx",
-				"typescript",
-				"typescript.tsx",
-				"javascriptreact",
-				"typescriptreact",
-				"json",
-			},
-		})
+		require("lspconfig")
 
 		vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, { desc = "Open float inline diagnostic" })
 		vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })

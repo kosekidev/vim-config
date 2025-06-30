@@ -65,49 +65,28 @@ return {
 				virt_text_win_col = nil,
 			})
 
-			require("dap-vscode-js").setup({
-				node_path = "node",
-				debugger_path = os.getenv("HOME") .. "/.dap-nvim/js-debug-adapter",
-				adapters = { "pwa-node", "pwa-chrome", "pwa-msedge", "node-terminal", "pwa-extensionHost" },
-			})
+			dap.adapters.chrome = {
+				type = "executable",
+				command = "node",
+				args = { os.getenv("HOME") .. "/.dap-nvim/vscode-chrome-debug/out/src/chromeDebug.js" },
+			}
 
 			for _, language in ipairs({ "typescript", "javascript", "typescriptreact", "javascriptreact", "vue" }) do
 				if not dap.configurations[language] then
 					dap.configurations[language] = {
 						{
-							type = "pwa-node",
+							type = "chrome",
+							name = "Chrome",
 							request = "launch",
-							name = "Launch current file (pwa-node)",
-							args = "${file}",
-							cwd = "${workspaceFolder}",
+							reAttach = true,
 							sourceMaps = true,
-							protocol = "inspector",
-						},
-						{
-							type = "pwa-node",
-							request = "launch",
-							name = "Launch Current File (pwa-node with ts-node)",
-							cwd = "${workspaceFolder}",
-							runtimeArgs = { "--loader", "ts-node/esm" },
-							runtimeExecutable = "node",
-							args = { "${file}" },
-							sourceMaps = true,
-							protocol = "inspector",
-							skipFiles = { "<node_internals>/**", "node_modules/**" },
-							resolveSourceMapLocations = {
-								"${workspaceFolder}/**",
-								"!**/node_modules/**",
-							},
-						},
-						{
-							type = "pwa-chrome",
-							request = "launch",
-							name = "Launch Chrome",
+							cwd = vim.fn.getcwd(),
 							url = function()
 								return "http://localhost:" .. (vim.fn.input("Select client port: ", 5173))
 							end,
+							protocol = "inspector",
+							port = 9222,
 							webRoot = "${workspaceFolder}",
-							sourceMaps = true,
 						},
 					}
 				end
