@@ -1,6 +1,6 @@
 return {
 	{
-		"mason-org/mason.nvim",
+		"williamboman/mason.nvim",
 		init = function()
 			vim.keymap.set("n", "<leader>cm", ":Mason<CR>", {
 				silent = true,
@@ -12,7 +12,7 @@ return {
 		end,
 	},
 	{
-		"mason-org/mason-lspconfig.nvim",
+		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
 				automatic_enable = false,

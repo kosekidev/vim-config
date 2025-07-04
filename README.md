@@ -367,17 +367,18 @@ A UI for nvim-dap which provides a good out of the box configuration.
 
 This plugin adds virtual text support to nvim-dap. nvim-treesitter is used to find variable definitions.
 
-## [vscode-chrome-debug](https://github.com/Microsoft/vscode-chrome-debug)
+## [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js)
 
-nvim-dap adapter for vscode-chrome-debug.
+nvim-dap adapter for vscode-js-debug.
 
 To install it, you can run the following commands(mac and linux) :
 
 ```
-git clone https://github.com/Microsoft/vscode-chrome-debug ~/.dap-nvim/vscode-chrome-debug
-cd ~/.dap-nvim/vscode-chrome-debug
-npm install
-npm run build
+git clone https://github.com/microsoft/vscode-js-debug ~/.dap-nvim/js-debug-adapter
+cd ~/.dap-nvim/js-debug-adapter
+npm install --legacy-peer-deps
+npx gulp vsDebugServerBundle
+mv dist out
 ```
 
 ## [neotest](https://github.com/nvim-neotest/neotest)
