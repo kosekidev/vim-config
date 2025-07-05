@@ -9,6 +9,7 @@ return {
 			json = { "prettier" },
 			markdown = { "prettier" },
 
+			vue = { "prettier" },
 			javascript = { "prettier" },
 			javascriptreact = { "prettier" },
 			typescript = { "prettier" },
