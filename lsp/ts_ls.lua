@@ -11,7 +11,6 @@ return {
 	root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
 	settings = {
 		typescript = {
-			-- Remove tsdk setting to allow auto-detection
 			tsserver = {
 				useSyntaxServer = false,
 			},

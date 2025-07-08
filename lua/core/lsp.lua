@@ -1,17 +1,12 @@
--- Mason PATH is handled by core.mason-path
 vim.lsp.enable({
 	"lua_ls",
-	"ts_ls",
-	-- "tailwindcss",
+	-- "ts_ls", -- Now using vtsls for vue_ls compatibility
+	"vtsls",
+	"tailwindcss",
 	"html_ls",
 	"css_ls",
 	"vue_ls",
 })
-
-vim.lsp.set_log_level("debug")
-
--- LSP servers are automatically managed by Mason
--- Use :MasonVerify to check which tools are Mason-managed
 
 vim.diagnostic.config({
 	virtual_text = true,
@@ -35,6 +30,30 @@ vim.diagnostic.config({
 		},
 	},
 })
+
+vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, { desc = "Open float inline diagnostic" })
+vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
+vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diognostic" })
+vim.keymap.set("n", "[w", function()
+	vim.diagnostic.goto_prev({
+		severity = "WARN",
+	})
+end, { desc = "Go to next warning" })
+vim.keymap.set("n", "]w", function()
+	vim.diagnostic.goto_next({
+		severity = "WARN",
+	})
+end, { desc = "Go to next warning" })
+vim.keymap.set("n", "[e", function()
+	vim.diagnostic.goto_prev({
+		severity = "ERROR",
+	})
+end, { desc = "Go to previous error" })
+vim.keymap.set("n", "]e", function()
+	vim.diagnostic.goto_next({
+		severity = "ERROR",
+	})
+end, { desc = "Go to next error" })
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(ev)
