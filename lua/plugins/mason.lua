@@ -1,15 +1,15 @@
 return {
 	{
 		"mason-org/mason.nvim",
-		lazy = false, -- Load immediately to ensure PATH is set
+		lazy = false,
 		cmd = "Mason",
 		keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
 		build = ":MasonUpdate",
 		opts = {
 			ensure_installed = {
-				-- LSP servers (matching your vim.lsp.enable() config)
 				"lua-language-server", -- Lua LSP
-				"typescript-language-server", -- TypeScript LSP
+				"vtsls", -- Vtsls, replace tsserver (for vue compatibility)
+				-- "typescript-language-server", -- TypeScript LSP
 				"tailwindcss-language-server", -- Tailwind CSS LSP
 				"html-lsp", -- HTML LSP
 				"css-lsp", -- CSS LSP
@@ -19,10 +19,8 @@ return {
 			},
 		},
 		config = function(_, opts)
-			-- PATH is handled by core.mason-path for consistency
 			require("mason").setup(opts)
 
-			-- Auto-install ensure_installed tools with better error handling
 			local mr = require("mason-registry")
 			local function ensure_installed()
 				for _, tool in ipairs(opts.ensure_installed) do
