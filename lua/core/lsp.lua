@@ -32,24 +32,24 @@ vim.diagnostic.config({
 })
 
 vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, { desc = "Open float inline diagnostic" })
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diognostic" })
-vim.keymap.set("n", "[w", function()
+vim.keymap.set("n", "<leader>Nd", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
+vim.keymap.set("n", "<leader>nd", vim.diagnostic.goto_next, { desc = "Go to next diognostic" })
+vim.keymap.set("n", "<leader>Nw", function()
 	vim.diagnostic.goto_prev({
 		severity = "WARN",
 	})
 end, { desc = "Go to next warning" })
-vim.keymap.set("n", "]w", function()
+vim.keymap.set("n", "<leader>nw", function()
 	vim.diagnostic.goto_next({
 		severity = "WARN",
 	})
 end, { desc = "Go to next warning" })
-vim.keymap.set("n", "[e", function()
+vim.keymap.set("n", "<leader>Ne", function()
 	vim.diagnostic.goto_prev({
 		severity = "ERROR",
 	})
 end, { desc = "Go to previous error" })
-vim.keymap.set("n", "]e", function()
+vim.keymap.set("n", "<leader>ne", function()
 	vim.diagnostic.goto_next({
 		severity = "ERROR",
 	})

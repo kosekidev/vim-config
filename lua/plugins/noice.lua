@@ -5,15 +5,6 @@ return {
 		{ "MunifTanjim/nui.nvim", lazy = true },
 		{
 			"rcarriga/nvim-notify",
-			keys = {
-				{
-					"<leader>nd",
-					function()
-						require("notify").dismiss({ silent = true, pending = true })
-					end,
-					desc = "Dismiss all Notifications",
-				},
-			},
 			opts = {
 				timeout = 3000,
 				background_colour = "#000000",

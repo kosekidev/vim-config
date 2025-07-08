@@ -73,12 +73,12 @@ Configs for the Nvim LSP Client
 | n    | `gd`         | Goto definition     |
 | n    | `gr`         | References          |
 | n    | `K`          | Hover               |
-| n    | `]d`         | Next Diagnostic     |
-| n    | `[d`         | Previous Diagnostic |
-| n    | `]e`         | Next Error          |
-| n    | `[e`         | Previous Error      |
-| n    | `]w`         | Next Warning        |
-| n    | `[w`         | Previous Warning    |
+| n    | `<leader>nd` | Next Diagnostic     |
+| n    | `<leader>Nd` | Previous Diagnostic |
+| n    | `<leader>ne` | Next Error          |
+| n    | `<leader>Ne` | Previous Error      |
+| n    | `<leader>nw` | Next Warning        |
+| n    | `<leader>Nw` | Previous Warning    |
 
 ## [Conform.nvim](https://github.com/stevearc/conform.nvim)
 
@@ -276,10 +276,6 @@ Message plugin
 ## [nvim-notify](https://github.com/rcarriga/nvim-notify)
 
 Notification manager
-
-| Mode | Keymap       | Description              |
-| ---- | ------------ | ------------------------ |
-| n    | `<leader>nd` | Delete all notifications |
 
 ## [nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 

@@ -61,30 +61,6 @@ vim.keymap.set("n", "N", "Nzzzv", {
 	silent = true,
 	desc = "Go to previous iteration and center the view",
 })
-vim.keymap.set("n", "]e", "]ezz", {
-	silent = true,
-	desc = "Go to next error and center the view",
-})
-vim.keymap.set("n", "[e", "[ezz", {
-	silent = true,
-	desc = "Go to previous error and center the view",
-})
-vim.keymap.set("n", "]w", "]dzz", {
-	silent = true,
-	desc = "Go to next warning and center the view",
-})
-vim.keymap.set("n", "[w", "[dzz", {
-	silent = true,
-	desc = "Go to previous warning and center the view",
-})
-vim.keymap.set("n", "]d", "]dzz", {
-	silent = true,
-	desc = "Go to next diagnostic and center the view",
-})
-vim.keymap.set("n", "[d", "[dzz", {
-	silent = true,
-	desc = "Go to previous diagnostic and center the view",
-})
 
 vim.keymap.set("x", "<leader>p", '"_dP', {
 	silent = true,
