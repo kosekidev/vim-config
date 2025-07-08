@@ -13,7 +13,7 @@ return {
 				"tailwindcss-language-server", -- Tailwind CSS LSP
 				"html-lsp", -- HTML LSP
 				"css-lsp", -- CSS LSP
-				-- "vue-language-server", -- Vue LSP
+				"vue-language-server", -- Vue LSP
 				"stylua",
 				"prettier",
 			},
