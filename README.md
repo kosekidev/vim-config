@@ -58,7 +58,7 @@ After that, do :checkhealth to check if you have all required dependencies.
 | ---- | ----------- | --------------------- |
 | n    | `<leader>l` | Open lazy-vim manager |
 
-## [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+## LSP
 
 Configs for the Nvim LSP Client
 
