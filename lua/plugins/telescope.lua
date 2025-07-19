@@ -56,7 +56,6 @@ return {
 		keys = {
 			{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find Files" },
 			{ "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Grep files" },
-			{ "<leader>:", "<cmd>Telescope command_history<cr>", desc = "Command History" },
 			-- find
 			{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Opened buffers" },
 			{ "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent files" },

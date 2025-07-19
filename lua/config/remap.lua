@@ -31,9 +31,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {
 	desc = "Move selected line up",
 })
 
-vim.keymap.set({ "n", "v" }, "<leader>t", "vat<ESC>F<", {
-	desc = "Go to closing tag in html",
-})
 vim.keymap.set("n", "<leader>cc", "f(v%oT.c", {
 	desc = "Change entire object call",
 })
@@ -95,10 +92,6 @@ vim.keymap.set("n", "<leader>ct", function()
 	end
 end, {
 	desc = "Toggle dark/light mode",
-})
-
-vim.keymap.set("n", "<leader>w", "<cmd>silent !tmux neww<CR>", {
-	desc = "Open new tmux window",
 })
 
 vim.keymap.set("n", "<C-F>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", {
