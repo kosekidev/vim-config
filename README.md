@@ -73,8 +73,8 @@ Configs for the Nvim LSP Client
 | n    | `K`          | Hover               |
 | n    | `<leader>nd` | Next Diagnostic     |
 | n    | `<leader>Nd` | Previous Diagnostic |
-| n    | `<leader>n`  | Next Error          |
-| n    | `<leader>N`  | Previous Error      |
+| n    | `<leader>m`  | Next Error          |
+| n    | `<leader>M`  | Previous Error      |
 | n    | `<leader>w`  | Next Warning        |
 | n    | `<leader>W`  | Previous Warning    |
 
@@ -86,9 +86,10 @@ Lightweight yet powerful formatter plugin for Neovim
 
 Open a quicklist with project's build script to run.
 
-| Mode | Keymap       | Description                                                               |
-| ---- | ------------ | ------------------------------------------------------------------------- |
-| n    | `<leader>bs` | Open build script quicklist then run choosen command in a new tmux window |
+| Mode | Keymap        | Description                                                                 |
+| ---- | ------------- | --------------------------------------------------------------------------- |
+| n    | `<leader>bs`  | Open build script quicklist then run choosen command in a new tmux window   |
+| n    | `<leader>pbs` | Open build script quicklist then run choosen command in a tmux split window |
 
 ## [Harpoon](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)
 

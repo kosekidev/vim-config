@@ -44,12 +44,12 @@ vim.keymap.set("n", "<leader>w", function()
 		severity = "WARN",
 	})
 end, { desc = "Go to next warning" })
-vim.keymap.set("n", "<leader>N", function()
+vim.keymap.set("n", "<leader>M", function()
 	vim.diagnostic.goto_prev({
 		severity = "ERROR",
 	})
 end, { desc = "Go to previous error" })
-vim.keymap.set("n", "<leader>n", function()
+vim.keymap.set("n", "<leader>m", function()
 	vim.diagnostic.goto_next({
 		severity = "ERROR",
 	})

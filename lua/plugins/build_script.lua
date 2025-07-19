@@ -1,9 +1,9 @@
 return {
 	"kosekidev/build-script",
 	keys = {
-		{ "<leader>bs", "<cmd>silent :OpenBuildScripts<CR>", { desc = "Open project's build script quicklist" } },
+		{ "<leader>pbs", "<cmd>silent :OpenBuildScripts<CR>", { desc = "Open project's build script quicklist" } },
 		{
-			"<leader>pbs",
+			"<leader>bs",
 			function()
 				require("build_script").open_quicklist(function(command)
 					local tmux_cmd = 'silent !tmux split-window "' .. command .. '"'
