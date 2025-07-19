@@ -73,10 +73,10 @@ Configs for the Nvim LSP Client
 | n    | `K`          | Hover               |
 | n    | `<leader>nd` | Next Diagnostic     |
 | n    | `<leader>Nd` | Previous Diagnostic |
-| n    | `<leader>ne` | Next Error          |
-| n    | `<leader>Ne` | Previous Error      |
-| n    | `<leader>nw` | Next Warning        |
-| n    | `<leader>Nw` | Previous Warning    |
+| n    | `<leader>n`  | Next Error          |
+| n    | `<leader>N`  | Previous Error      |
+| n    | `<leader>w`  | Next Warning        |
+| n    | `<leader>W`  | Previous Warning    |
 
 ## [Conform.nvim](https://github.com/stevearc/conform.nvim)
 
