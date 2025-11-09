@@ -3,6 +3,8 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		event = { "BufReadPost", "BufNewFile" },
+		branch = "master",
+		lazy = false,
 		opts = {
 			indent = true,
 			highlight = {
